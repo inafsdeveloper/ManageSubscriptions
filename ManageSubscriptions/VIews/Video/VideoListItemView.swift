@@ -1,5 +1,5 @@
 //
-//  SubscriptionListView.swift
+//  VideoListItemView.swift
 //  ManageSubscriptions
 //
 //  Created by Pankaj Nafria on 7/27/23.
@@ -7,39 +7,37 @@
 
 import SwiftUI
 
-struct SubscriptionListView: View {
+struct VideoListItemView: View {
     // MARK: - PROPERTIES
     @State private var searchText: String = ""
     
-    private var allSubscriptions: YTSubscriptions = Bundle.main.load("subscription-api.json")
+    private var allVideos: YTVideosSearch = Bundle.main.load("videos-api.json")
     
-    private var filteredItems: [SubsItem] {
+    private var filteredItems: [YTSVidItem] {
         if (searchText.isEmpty) {
-            return allSubscriptions.items
+            return allVideos.items
         } else {
-            return allSubscriptions.items.filter {$0.snippet.title.contains(searchText)}
+            return allVideos.items.filter {$0.snippet.title.contains(searchText)}
         }
     }
-    
     // MARK: - BODY
     var body: some View {
         VStack {
             TextField("Search", text: $searchText)
                 .padding()
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                
+            
             List {
                 ForEach(filteredItems, id:\.self) { item in
-                    Text(item.snippet.title)
+                    VideoItemView(video: item)
                 }
-            } //: LIST
-            
-        } //: VSTACK
+            }
+        }
     }
 }
 
-struct SubscriptionListView_Previews: PreviewProvider {
+struct VideoListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        SubscriptionListView()
+        VideoListItemView()
     }
 }
