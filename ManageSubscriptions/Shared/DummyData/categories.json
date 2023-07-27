@@ -1,37 +1,111 @@
 [
-  {
-    "id" : 1,
-    "name" : "Science",
-    "image": "Category-Science"
-  },
-  {
-    "id" : 2,
-    "name" : "Technology",
-    "image": "Category-Technology"
-  },
-  {
-    "id" : 3,
-    "name" : "Economics",
-    "image": "Category-Economics"
-  },
-  {
-    "id" : 4,
-    "name" : "Math",
-    "image": "Category-Math"
-  },
-  {
-    "id" : 5,
-    "name" : "Entertainment",
-    "image": "Category-Entertainment"
-  },
-  {
-    "id" : 6,
-    "name" : "News",
-    "image": "Category-News"
-  },
-  {
-    "id" : 7,
-    "name" : "Politics",
-    "image": "Category-Politics"
-  }
+    {
+        "id": 1,
+        "name": "Science",
+        "image": "Category-Science",
+        "description": "Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly",
+        "subscriptions": [
+            {
+                "id": 1,
+                "channelId": "UC7_gcs09iThXybpVgjHZ_7g",
+                "title": "PBS Space Time",
+                "image": "PBSSpaceTime",
+                "description": "Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly.Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly.Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly"
+            },
+            {
+                "id": 2,
+                "channelId": "UCUHW94eEFW7hkUMVaZz4eDg",
+                "title": "Minute Physics",
+                "image": "MinutePhysics",
+                "description": "Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly.Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly.Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Technology",
+        "image": "Category-Technology",
+        "description": "Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly",
+        "subscriptions": [
+            {
+                "id": 1,
+                "channelId": "UCjtUS7-SZTi6pXjUbzGHQCg",
+                "title": "Undecided with Matt Ferrell",
+                "image": "UMF",
+                "description": "Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly.Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly.Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly"
+            },
+            {
+                "id": 2,
+                "channelId": "UC4QZ_LsYcvcq7qOsOhpAX4A",
+                "title": "ColdFusion",
+                "image": "ColdFusion",
+                "description": "Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly.Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly.Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Economics",
+        "image": "Category-Economics",
+        "description": "Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly.Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly.Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly",
+        "subscriptions": [
+            {
+                "id": 1,
+                "channelId": "UCZ4AMrDcNrfy3X6nsU8-rPg",
+                "title": "Economics Explained",
+                "image": "EE",
+                "description": "Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly"
+            },
+            {
+                "id": 2,
+                "channelId": "UCvQECJukTDE2i6aCoMnS-Vg",
+                "title": "Big Think",
+                "image": "BigThink",
+                "description": "Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Math",
+        "image": "Category-Math",
+        "description": "Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly",
+        "subscriptions": [
+            {
+                "id": 1,
+                "channelId": "UCYO_jab_esuFRV4b17AJtAw",
+                "title": "3Blue1Brown",
+                "image": "3Blue1Brown",
+                "description": "Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly"
+            },
+            {
+                "id": 2,
+                "channelId": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "title": "Veritasium",
+                "image": "Ve",
+                "description": "Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Entertainment",
+        "image": "Category-Entertainment",
+        "description": "Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly",
+        "subscriptions": []
+    },
+    {
+        "id": 6,
+        "name": "News",
+        "image": "Category-News",
+        "description": "Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly",
+        "subscriptions": []
+    },
+    {
+        "id": 7,
+        "name": "Politics",
+        "image": "Category-Politics",
+        "description": "Dummy Description for category. This would be optional field during category creation. So it needs to be coded accordinly",
+        "subscriptions": []
+    }
 ]

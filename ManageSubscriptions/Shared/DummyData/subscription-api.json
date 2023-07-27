@@ -13,7 +13,7 @@
             "snippet": {
                 "publishedAt": "2023-01-30T19:53:31.037319Z",
                 "title": "3Blue1Brown",
-                "description": "3Blue1Brown, by Grant Sanderson, is some combination of math and entertainment, depending on your disposition. The goal is for explanations to be driven by animations and for difficult problems to be made simple with changes in perspective.\n\nFor more information, other projects, FAQs, and inquiries see the website: https://www.3blue1brown.com",
+                "description": "3Blue1Brown, by Grant Sanderson, is some combination of math and entertainment, depending on your disposition. The goal is for explanations to be driven by animations and for difficult problems to be made simple with changes in perspective.",
                 "resourceId": {
                     "kind": "youtube#channel",
                     "channelId": "UCYO_jab_esuFRV4b17AJtAw"
@@ -44,7 +44,7 @@
             "snippet": {
                 "publishedAt": "2023-04-08T21:04:55.549037Z",
                 "title": "Adam Bobrow",
-                "description": "As The Voice of Table Tennis, I travel the globe watching and commentating the world's best players.  While I also play tournaments around the world, my goal is to bring joy, laughter and inspiration to all and to share my passion for table tennis and life in general.  I hope to be of great service and create something that will long out-live me to make a positive impact on the world. \n\nFollow me on IG, FB and Twitter:\n\nhttps://www.instagram.com/AdamBobrow\nhttps://www.facebook.com/AdamBobrowOfficial\nhttps://twitter.com/AdamBobrow\n\nMerchandise - https://www.AdamBobrow.com​\n\nI play for andro.  \nEquipment:\nRubber-  RASANTER R45 (both sides)\nBlade - Treiber K\n\nI'm excited to be teamed up with PINGPOD to grow and promote table tennis. \n\n#optimism #love #tabletennis #pingpong #travel",
+                "description": "As The Voice of Table Tennis, I travel the globe watching and commentating the world's best players.  While I also play tournaments around the world, my goal is to bring joy, laughter and inspiration to all and to share my passion for table tennis and life in general.  I hope to be of great service and create something that will long out-live me to make a positive impact on the world.",
                 "resourceId": {
                     "kind": "youtube#channel",
                     "channelId": "UCxccMOwsnVQEqmOU94MZi7g"
@@ -75,7 +75,7 @@
             "snippet": {
                 "publishedAt": "2018-04-06T21:38:48.005885Z",
                 "title": "AWS Tutorial Series",
-                "description": "AWS Tutorial Series is a YouTube channel dedicated to providing clear and informative tutorials working with many web services Amazon has to offer. It is often very complex dealing with multiple services and linking them together so we hope to make it easy to understand. Any requests feel free to reach out to me and I'll get a tutorial video up for you!\n\nhttps://awstutorialseries.com/",
+                "description": "AWS Tutorial Series is a YouTube channel dedicated to providing clear and informative tutorials working with many web services Amazon has to offer. It is often very complex dealing with multiple services and linking them together so we hope to make it easy to understand. Any requests feel free to reach out to me and I'll get a tutorial video up for you!",
                 "resourceId": {
                     "kind": "youtube#channel",
                     "channelId": "UClLLJjpSWRRa1BosQrNVDjA"
@@ -106,7 +106,7 @@
             "snippet": {
                 "publishedAt": "2023-04-08T21:05:17.102769Z",
                 "title": "Big Think",
-                "description": "Big Think is the leading source of expert-driven, actionable, educational content -- with thousands of videos, featuring experts ranging from Bill Clinton to Bill Nye, we help you get smarter, faster. Get actionable lessons from the world’s greatest thinkers & doers. Our experts are either disrupting or leading their respective fields. We aim to help you explore the big ideas and core skills that define knowledge in the 21st century, so you can apply them to the questions and challenges in your own life. Other Frequent contributors include Michio Kaku & Neil DeGrasse Tyson.\n\nHead to bigthink.com for a multitude of articles just as informative and satisfying as our videos. New articles posted daily on a range of intellectual topics. ​Join Big Think+ to gain access to an immense library of content. It features insight from many of the most celebrated and intelligent individuals in the world today.\n\n   - Subscribe for daily videos.\n   - Business inquiries and fan suggestions welcome.",
+                "description": "Big Think is the leading source of expert-driven, actionable, educational content -- with thousands of videos, featuring experts ranging from Bill Clinton to Bill Nye, we help you get smarter, faster. Get actionable lessons from the world’s greatest thinkers & doers. Our experts are either disrupting or leading their respective fields. We aim to help you explore the big ideas and core skills that define knowledge in the 21st century, so you can apply them to the questions and challenges in your own life. Other Frequent contributors include Michio Kaku & Neil DeGrasse Tyson.",
                 "resourceId": {
                     "kind": "youtube#channel",
                     "channelId": "UCvQECJukTDE2i6aCoMnS-Vg"
@@ -168,7 +168,7 @@
             "snippet": {
                 "publishedAt": "2016-07-20T15:26:19Z",
                 "title": "ColdFusion",
-                "description": "Hi, my name is Dagogo Altraide and I create and narrate all the videos on here.\nThis channel aims to let you experience the cutting edge of the world around us in a relaxed atmosphere.\nLearn the captivating stories about how our world came to be and also learn what's happening in the cutting edge today.\n\n--- New Thinking Book written by Dagogo Altraide ---\nLearn the stories of those who invented the things we use everyday. This book is rated the 9th best technology history book of all time by Book Authority!\nAudio Book: https://goo.gl/p8auh3\nGet the book on Amazon US: http://bit.ly/NewThinkingbook\nAmazon India Link: https://goo.gl/qJCC1T\nAmazon UK link: https://goo.gl/RBxisf\nEbook on Google Play: http://bit.ly/NewThinkingGooglePlay\n\nMERCH:\n\nINTERNATIONAL: https://store.coldfusioncollective.com/\nAUSTRALIA: https://shop.coldfusioncollective.com/\n\nContact | *Business ONLY* dagogo@coldfusioncollective.com\n\nJoin the fun on instagram: \n\n@ColdFusiontv\n\nFacebook | www.facebook.com/coldfusiontv",
+                "description": "Hi, my name is Dagogo Altraide and I create and narrate all the videos on here.",
                 "resourceId": {
                     "kind": "youtube#channel",
                     "channelId": "UC4QZ_LsYcvcq7qOsOhpAX4A"
@@ -188,378 +188,6 @@
             },
             "contentDetails": {
                 "totalItemCount": 466,
-                "newItemCount": 0,
-                "activityType": "all"
-            }
-        },
-        {
-            "kind": "youtube#subscription",
-            "etag": "qFa2mRsxBcnn7NKXsxzZ_y0I0NQ",
-            "id": "wbUweawo85Kfs2S_fXlV2BckSyRdo1CA54RdmTGE7kk",
-            "snippet": {
-                "publishedAt": "2016-07-28T14:58:52Z",
-                "title": "Devslopes",
-                "description": "We teach people how to build cool sh*t",
-                "resourceId": {
-                    "kind": "youtube#channel",
-                    "channelId": "UClLXKYEEM8OBBx85DOa6-cg"
-                },
-                "channelId": "UC13ZxBY-rUQRnGbjfi-QcPQ",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaSH7G7bl1xl-1N-NznjGov6qXvjb_LJmGYDjhrY6A=s88-c-k-c0x00ffffff-no-rj"
-                    },
-                    "medium": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaSH7G7bl1xl-1N-NznjGov6qXvjb_LJmGYDjhrY6A=s240-c-k-c0x00ffffff-no-rj"
-                    },
-                    "high": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaSH7G7bl1xl-1N-NznjGov6qXvjb_LJmGYDjhrY6A=s800-c-k-c0x00ffffff-no-rj"
-                    }
-                }
-            },
-            "contentDetails": {
-                "totalItemCount": 205,
-                "newItemCount": 1,
-                "activityType": "all"
-            }
-        },
-        {
-            "kind": "youtube#subscription",
-            "etag": "4XWCybtvHg-aAah4gyEMMZo2LIw",
-            "id": "wbUweawo85Kfs2S_fXlV2FZVqUATA7AlMHZsPCejmis",
-            "snippet": {
-                "publishedAt": "2023-04-08T21:05:54.079065Z",
-                "title": "Economics Explained",
-                "description": "Helping you become more knowledgeable about how the world works, our content covers the biggest topics and headlines through the eyes of economists. The team explores a wide range of subjects improving your ability to understand the world more clearly.\n\nThis is economics, explained.\n\nContact:\nFor business partnerships: partnerships@economicsexplained.com\nFor talent: talent@economicsexplained.com",
-                "resourceId": {
-                    "kind": "youtube#channel",
-                    "channelId": "UCZ4AMrDcNrfy3X6nsU8-rPg"
-                },
-                "channelId": "UC13ZxBY-rUQRnGbjfi-QcPQ",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://yt3.ggpht.com/LKssvfNuBZEZVm8uw78-X0X5oJbMFqViWN_UuzK450jyU9kT9Oy9lDcIjrPaEFmli6B9KANWnA=s88-c-k-c0x00ffffff-no-rj"
-                    },
-                    "medium": {
-                        "url": "https://yt3.ggpht.com/LKssvfNuBZEZVm8uw78-X0X5oJbMFqViWN_UuzK450jyU9kT9Oy9lDcIjrPaEFmli6B9KANWnA=s240-c-k-c0x00ffffff-no-rj"
-                    },
-                    "high": {
-                        "url": "https://yt3.ggpht.com/LKssvfNuBZEZVm8uw78-X0X5oJbMFqViWN_UuzK450jyU9kT9Oy9lDcIjrPaEFmli6B9KANWnA=s800-c-k-c0x00ffffff-no-rj"
-                    }
-                }
-            },
-            "contentDetails": {
-                "totalItemCount": 302,
-                "newItemCount": 1,
-                "activityType": "all"
-            }
-        },
-        {
-            "kind": "youtube#subscription",
-            "etag": "jDNaPA4ZOKeIss1yrGZ-ywcovBI",
-            "id": "wbUweawo85Kfs2S_fXlV2EuoIbDUbB6XOJqvCqzhacg",
-            "snippet": {
-                "publishedAt": "2023-04-08T21:06:32.792142Z",
-                "title": "In One Lesson",
-                "description": "Everything you need to know about a subject in one quick and easy lesson.",
-                "resourceId": {
-                    "kind": "youtube#channel",
-                    "channelId": "UC6eaVn7349LRh5yzpXjeu8A"
-                },
-                "channelId": "UC13ZxBY-rUQRnGbjfi-QcPQ",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaRYxPdko-nGo5KjgcrD2TF9xT7-MAUg2ga0H5eg=s88-c-k-c0x00ffffff-no-rj"
-                    },
-                    "medium": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaRYxPdko-nGo5KjgcrD2TF9xT7-MAUg2ga0H5eg=s240-c-k-c0x00ffffff-no-rj"
-                    },
-                    "high": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaRYxPdko-nGo5KjgcrD2TF9xT7-MAUg2ga0H5eg=s800-c-k-c0x00ffffff-no-rj"
-                    }
-                }
-            },
-            "contentDetails": {
-                "totalItemCount": 14,
-                "newItemCount": 0,
-                "activityType": "all"
-            }
-        },
-        {
-            "kind": "youtube#subscription",
-            "etag": "Dy22c8O8dCYzo7R2cNumNLYKunA",
-            "id": "wbUweawo85Kfs2S_fXlV2P3NTBqt5SNhDwDTYZTp0o4",
-            "snippet": {
-                "publishedAt": "2016-07-19T21:57:53Z",
-                "title": "Lets Build That App",
-                "description": "Here at LetsBuildThatApp, I'll do my best to teach you how to build working apps from the AppStore, i.e. YouTube, Facebook, FB Messenger, etc.  We go beyond making simple blog and calculator apps to explore how professionals create million dollar projects.\n\nMy name is Brian Voong, a professional instructor and developer living in San Francisco, 10 years of knowledge to spread\n\nFAQ\nQ1: Can you show us how to write an app using storyboard instead of code/programmatically?\nA1: Short answer, most likely no.  Long answer: It is my goal to dispel the misconception that building out apps programmatically is difficult.  I go through exactly how to write out components in code and many have found it very enlightening. Be brave, follow along, and you'll be OK.\n\nWebsite: https://www.letsbuildthatapp.com\nMentoring: https://www.codementor.io/bhlvoong\nTwitter: https://twitter.com/buildthatapp",
-                "resourceId": {
-                    "kind": "youtube#channel",
-                    "channelId": "UCuP2vJ6kRutQBfRmdcI92mA"
-                },
-                "channelId": "UC13ZxBY-rUQRnGbjfi-QcPQ",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaSPAvCYOpbC_hVOdj1cN8bHPqgEluE5Y-PBtI7szg=s88-c-k-c0x00ffffff-no-rj"
-                    },
-                    "medium": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaSPAvCYOpbC_hVOdj1cN8bHPqgEluE5Y-PBtI7szg=s240-c-k-c0x00ffffff-no-rj"
-                    },
-                    "high": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaSPAvCYOpbC_hVOdj1cN8bHPqgEluE5Y-PBtI7szg=s800-c-k-c0x00ffffff-no-rj"
-                    }
-                }
-            },
-            "contentDetails": {
-                "totalItemCount": 449,
-                "newItemCount": 0,
-                "activityType": "all"
-            }
-        },
-        {
-            "kind": "youtube#subscription",
-            "etag": "poai4DrDKw5j0CLbT4T4KFsj2m8",
-            "id": "wbUweawo85Kfs2S_fXlV2O-y7em54QR7jEBPs23xrpk",
-            "snippet": {
-                "publishedAt": "2023-04-08T21:06:53.757008Z",
-                "title": "minutephysics",
-                "description": "Simply put: cool physics and other sweet science.\n\n\"If you can't explain it simply, you don't understand it well enough.\"\n~Rutherford via Einstein? (wikiquote)\n\nCreated by Henry Reich",
-                "resourceId": {
-                    "kind": "youtube#channel",
-                    "channelId": "UCUHW94eEFW7hkUMVaZz4eDg"
-                },
-                "channelId": "UC13ZxBY-rUQRnGbjfi-QcPQ",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaTxXv9ROLixVhRARR8DR89zWuq1roEf0zZ7-X-O=s88-c-k-c0x00ffffff-no-rj"
-                    },
-                    "medium": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaTxXv9ROLixVhRARR8DR89zWuq1roEf0zZ7-X-O=s240-c-k-c0x00ffffff-no-rj"
-                    },
-                    "high": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaTxXv9ROLixVhRARR8DR89zWuq1roEf0zZ7-X-O=s800-c-k-c0x00ffffff-no-rj"
-                    }
-                }
-            },
-            "contentDetails": {
-                "totalItemCount": 271,
-                "newItemCount": 0,
-                "activityType": "all"
-            }
-        },
-        {
-            "kind": "youtube#subscription",
-            "etag": "Lh35BappmwOIc_npTbUpmBCQdNw",
-            "id": "wbUweawo85Kfs2S_fXlV2LmJGt8IVsRyT2B68_dAljA",
-            "snippet": {
-                "publishedAt": "2023-01-30T19:53:43.534168Z",
-                "title": "Numberphile",
-                "description": "Videos about numbers and mathematics. Videos by Brady Haran since 2011.",
-                "resourceId": {
-                    "kind": "youtube#channel",
-                    "channelId": "UCoxcjq-8xIDTYp3uz647V5A"
-                },
-                "channelId": "UC13ZxBY-rUQRnGbjfi-QcPQ",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaRLmRMNKIIiXGcBJoYTFhdfo-_i5GRdRFAwlZGPUQ=s88-c-k-c0x00ffffff-no-rj"
-                    },
-                    "medium": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaRLmRMNKIIiXGcBJoYTFhdfo-_i5GRdRFAwlZGPUQ=s240-c-k-c0x00ffffff-no-rj"
-                    },
-                    "high": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaRLmRMNKIIiXGcBJoYTFhdfo-_i5GRdRFAwlZGPUQ=s800-c-k-c0x00ffffff-no-rj"
-                    }
-                }
-            },
-            "contentDetails": {
-                "totalItemCount": 691,
-                "newItemCount": 1,
-                "activityType": "all"
-            }
-        },
-        {
-            "kind": "youtube#subscription",
-            "etag": "SNrfEp-krmNmEaccfDJ7dfBib_o",
-            "id": "wbUweawo85Kfs2S_fXlV2Kq4d0AhhxFLhiNcnyoEhvE",
-            "snippet": {
-                "publishedAt": "2016-07-20T18:10:49Z",
-                "title": "PBS Space Time",
-                "description": "Space Time explores the outer reaches of space, the craziness of astrophysics, the possibilities of sci-fi, and anything else you can think of beyond Planet Earth with our astrophysicist host: Matthew O’Dowd.\n\nCheck for New Episodes on Wednesday afternoons!\n\nMatt O'Dowd spends his time studying the universe, especially really far-away things like quasars, super-massive black holes, and evolving galaxies. He uses telescopes in space to do it. Matt completed his Ph.D. at NASA's Space Telescope Science Institute, followed by work at the University of Melbourne and Columbia University. He's now a professor at the City University of New York's Lehman College and an Associate at the American Museum of Natural History's Hayden Planetarium.\n\nPrevious host Gabe Perez-Giz is an astrophysicist who studies black hole physics. He received his Ph.D. from Columbia University and also hosted PBS Infinite Series.",
-                "resourceId": {
-                    "kind": "youtube#channel",
-                    "channelId": "UC7_gcs09iThXybpVgjHZ_7g"
-                },
-                "channelId": "UC13ZxBY-rUQRnGbjfi-QcPQ",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaSTcakerg0lGGRrf-anTpDg-BRnkc-Hhojp4J168A=s88-c-k-c0x00ffffff-no-rj"
-                    },
-                    "medium": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaSTcakerg0lGGRrf-anTpDg-BRnkc-Hhojp4J168A=s240-c-k-c0x00ffffff-no-rj"
-                    },
-                    "high": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaSTcakerg0lGGRrf-anTpDg-BRnkc-Hhojp4J168A=s800-c-k-c0x00ffffff-no-rj"
-                    }
-                }
-            },
-            "contentDetails": {
-                "totalItemCount": 359,
-                "newItemCount": 1,
-                "activityType": "all"
-            }
-        },
-        {
-            "kind": "youtube#subscription",
-            "etag": "4M_GZcHcTFXzjdRrcasZ16jV5z0",
-            "id": "wbUweawo85Kfs2S_fXlV2BaSNU7cR6CXRtP2L735xwI",
-            "snippet": {
-                "publishedAt": "2023-01-30T19:53:52.486673Z",
-                "title": "Physics Girl",
-                "description": "Physics Girl is a YouTube channel created by Dianna Cowern that adventures into the physical sciences with experiments, demonstrations, and cool new discoveries. Physics Girl has videos for every atom and eve.\n\n\nMailing address:\nPhysics Girl\nPO Box 9281\nSan Diego CA, 92169",
-                "resourceId": {
-                    "kind": "youtube#channel",
-                    "channelId": "UC7DdEm33SyaTDtWYGO2CwdA"
-                },
-                "channelId": "UC13ZxBY-rUQRnGbjfi-QcPQ",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaQlOJYEpCl2QkWdv6qu3A_sprulyeJttNbsgCLxSA=s88-c-k-c0x00ffffff-no-rj"
-                    },
-                    "medium": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaQlOJYEpCl2QkWdv6qu3A_sprulyeJttNbsgCLxSA=s240-c-k-c0x00ffffff-no-rj"
-                    },
-                    "high": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaQlOJYEpCl2QkWdv6qu3A_sprulyeJttNbsgCLxSA=s800-c-k-c0x00ffffff-no-rj"
-                    }
-                }
-            },
-            "contentDetails": {
-                "totalItemCount": 235,
-                "newItemCount": 0,
-                "activityType": "all"
-            }
-        },
-        {
-            "kind": "youtube#subscription",
-            "etag": "QxQnqZTmxn-6dF0dmFgluWoJKR8",
-            "id": "wbUweawo85Kfs2S_fXlV2L9X-SoKHG2d0yrUQ3n6AbU",
-            "snippet": {
-                "publishedAt": "2023-04-08T21:07:12.604387Z",
-                "title": "Seeker",
-                "description": "Seeker is now part of The Verge. Stay tuned for new topics, faces, and much more. \n\nhttps://www.theverge.com/",
-                "resourceId": {
-                    "kind": "youtube#channel",
-                    "channelId": "UCzWQYUVCpZqtN93H8RR44Qw"
-                },
-                "channelId": "UC13ZxBY-rUQRnGbjfi-QcPQ",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://yt3.ggpht.com/TTgPh29emVEpiIfX3l-4TvdMr9PVULl_W4XKHjJddKoccZITJ5IAn9_j3ZtNmXkCOHWJCiLA2w=s88-c-k-c0x00ffffff-no-rj"
-                    },
-                    "medium": {
-                        "url": "https://yt3.ggpht.com/TTgPh29emVEpiIfX3l-4TvdMr9PVULl_W4XKHjJddKoccZITJ5IAn9_j3ZtNmXkCOHWJCiLA2w=s240-c-k-c0x00ffffff-no-rj"
-                    },
-                    "high": {
-                        "url": "https://yt3.ggpht.com/TTgPh29emVEpiIfX3l-4TvdMr9PVULl_W4XKHjJddKoccZITJ5IAn9_j3ZtNmXkCOHWJCiLA2w=s800-c-k-c0x00ffffff-no-rj"
-                    }
-                }
-            },
-            "contentDetails": {
-                "totalItemCount": 3977,
-                "newItemCount": 0,
-                "activityType": "all"
-            }
-        },
-        {
-            "kind": "youtube#subscription",
-            "etag": "7MZ_NPBIxzFh7HaYDPtF8ul4AHc",
-            "id": "wbUweawo85Kfs2S_fXlV2JlNfPjOPHgvMj1aWRj6gaw",
-            "snippet": {
-                "publishedAt": "2023-01-30T19:54:18.909965Z",
-                "title": "The B1M",
-                "description": "We love construction and we want the whole world to love it too! \n\nHosted by Fred Mills, The B1M is the world’s largest, most subscribed-to (and best) video channel for construction. We bring you new videos on Wednesdays at 12 noon UK // 7am Eastern.\n\nOur mission is to fundamentally change the perception of construction on planet Earth, attracting more people to work in this incredible industry.",
-                "resourceId": {
-                    "kind": "youtube#channel",
-                    "channelId": "UC6n8I1UDTKP1IWjQMg6_TwA"
-                },
-                "channelId": "UC13ZxBY-rUQRnGbjfi-QcPQ",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaSHLcrA5ogvSXZxorNm3-HsC1WWyQmKGNzor7qMig=s88-c-k-c0x00ffffff-no-rj"
-                    },
-                    "medium": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaSHLcrA5ogvSXZxorNm3-HsC1WWyQmKGNzor7qMig=s240-c-k-c0x00ffffff-no-rj"
-                    },
-                    "high": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaSHLcrA5ogvSXZxorNm3-HsC1WWyQmKGNzor7qMig=s800-c-k-c0x00ffffff-no-rj"
-                    }
-                }
-            },
-            "contentDetails": {
-                "totalItemCount": 471,
-                "newItemCount": 0,
-                "activityType": "all"
-            }
-        },
-        {
-            "kind": "youtube#subscription",
-            "etag": "-4iiZWHz9F9duXiae-mlbvxHhQ4",
-            "id": "wbUweawo85Kfs2S_fXlV2BySB98TaPkyEVAIyA8VIKw",
-            "snippet": {
-                "publishedAt": "2023-01-30T19:56:04.402679Z",
-                "title": "Undecided with Matt Ferrell",
-                "description": "As a UI/UX designer by trade, I explore how sustainable and smart technologies impact our lives. And I try to dive deeper into those topics to provide context.\n\nTopics like electric vehicles, solar panels, and renewable energy that is meant to transition the world off of fossil fuels.  Smart home technology that can make our homes not only more convenient, but safer and more accessible.  Wearable technology that can track our health and save lives.  Or how technology might be invading and breaking down the walls of our privacy.\n\nSo in short...\n\nExploring how technology impacts our lives.\n\nIf you’d like to support the channel, you can do so at https://www.patreon.com/mattferrell.\n\nGet in touch: https://undecidedmf.com/contact-me\n\nSponsorship inquiry form: https://undecidedmf.com/sponsorships\nNon-sponsorship inquiries will not be responded to at this address.",
-                "resourceId": {
-                    "kind": "youtube#channel",
-                    "channelId": "UCjtUS7-SZTi6pXjUbzGHQCg"
-                },
-                "channelId": "UC13ZxBY-rUQRnGbjfi-QcPQ",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaSXblmJeIz5FdhBE_2sSoPPgt__VjZ2HMh0kzBeEg=s88-c-k-c0x00ffffff-no-rj"
-                    },
-                    "medium": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaSXblmJeIz5FdhBE_2sSoPPgt__VjZ2HMh0kzBeEg=s240-c-k-c0x00ffffff-no-rj"
-                    },
-                    "high": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaSXblmJeIz5FdhBE_2sSoPPgt__VjZ2HMh0kzBeEg=s800-c-k-c0x00ffffff-no-rj"
-                    }
-                }
-            },
-            "contentDetails": {
-                "totalItemCount": 272,
-                "newItemCount": 0,
-                "activityType": "all"
-            }
-        },
-        {
-            "kind": "youtube#subscription",
-            "etag": "rzQ_8R8tt0e771nCiTZt5eiJxiM",
-            "id": "wbUweawo85Kfs2S_fXlV2ABZYHfxcefwREq2KCexvZg",
-            "snippet": {
-                "publishedAt": "2023-01-30T19:54:11.850959Z",
-                "title": "Veritasium",
-                "description": "An element of truth - videos about science, education, and anything else I find interesting.",
-                "resourceId": {
-                    "kind": "youtube#channel",
-                    "channelId": "UCHnyfMqiRRG1u-2MsSQLbXA"
-                },
-                "channelId": "UC13ZxBY-rUQRnGbjfi-QcPQ",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaTeHtkxl6aSpF7voXkGb7YY5UCCf2GEKQB0SyakQQ=s88-c-k-c0x00ffffff-no-rj"
-                    },
-                    "medium": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaTeHtkxl6aSpF7voXkGb7YY5UCCf2GEKQB0SyakQQ=s240-c-k-c0x00ffffff-no-rj"
-                    },
-                    "high": {
-                        "url": "https://yt3.ggpht.com/ytc/AOPolaTeHtkxl6aSpF7voXkGb7YY5UCCf2GEKQB0SyakQQ=s800-c-k-c0x00ffffff-no-rj"
-                    }
-                }
-            },
-            "contentDetails": {
-                "totalItemCount": 369,
                 "newItemCount": 0,
                 "activityType": "all"
             }

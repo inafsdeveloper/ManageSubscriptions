@@ -21,7 +21,7 @@ struct CategoriesView: View {
                     
                     ForEach(categories) { category in
                         NavigationLink {
-                            SubscriptionsView()
+                            SubscriptionsView(category: category)
                         } label: {
                             CategoryItemView(category: category)
                         }

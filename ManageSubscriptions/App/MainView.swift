@@ -24,7 +24,7 @@ struct MainView: View {
                     Image(systemName: "play.rectangle")
                     Text("Videos")
                 }
-            SubscriptionsView()
+            SubscriptionsView(category: nil)
                 .tabItem {
                     Image(systemName: "music.note.list")
                     Text("Subscriptions")

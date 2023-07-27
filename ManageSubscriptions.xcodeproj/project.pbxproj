@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68469A042A731544002116FC /* videos-api.json in Resources */ = {isa = PBXBuildFile; fileRef = 68469A032A731544002116FC /* videos-api.json */; };
+		68469A072A7315C3002116FC /* YTVideosSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68469A062A7315C3002116FC /* YTVideosSearch.swift */; };
+		68469A092A731612002116FC /* YTSubscriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68469A082A731612002116FC /* YTSubscriptions.swift */; };
+		68469A0C2A731681002116FC /* CatgegorySubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68469A0B2A731681002116FC /* CatgegorySubscriptionView.swift */; };
+		68469A0E2A731704002116FC /* SubscriptionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68469A0D2A731704002116FC /* SubscriptionListView.swift */; };
 		68D954CF2A7221FD0096D15A /* ManageSubscriptionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D954CE2A7221FD0096D15A /* ManageSubscriptionsApp.swift */; };
 		68D954D12A7221FD0096D15A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D954D02A7221FD0096D15A /* ContentView.swift */; };
 		68D954D32A7221FE0096D15A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D954D22A7221FE0096D15A /* Assets.xcassets */; };
@@ -28,6 +33,8 @@
 		68D9551E2A7246690096D15A /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D9551D2A7246690096D15A /* CategoryItemView.swift */; };
 		68D955202A724EA50096D15A /* subscription-api.json in Resources */ = {isa = PBXBuildFile; fileRef = 68D9551F2A724EA50096D15A /* subscription-api.json */; };
 		68D955222A72556A0096D15A /* categories copy.json in Resources */ = {isa = PBXBuildFile; fileRef = 68D955212A72556A0096D15A /* categories copy.json */; };
+		68D955252A72FE960096D15A /* SubscriptionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D955242A72FE960096D15A /* SubscriptionItemView.swift */; };
+		68D955272A7303220096D15A /* CategoryCoverItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D955262A7303220096D15A /* CategoryCoverItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68469A032A731544002116FC /* videos-api.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "videos-api.json"; sourceTree = "<group>"; };
+		68469A062A7315C3002116FC /* YTVideosSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTVideosSearch.swift; sourceTree = "<group>"; };
+		68469A082A731612002116FC /* YTSubscriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTSubscriptions.swift; sourceTree = "<group>"; };
+		68469A0B2A731681002116FC /* CatgegorySubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatgegorySubscriptionView.swift; sourceTree = "<group>"; };
+		68469A0D2A731704002116FC /* SubscriptionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionListView.swift; sourceTree = "<group>"; };
 		68D954CB2A7221FD0096D15A /* ManageSubscriptions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManageSubscriptions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D954CE2A7221FD0096D15A /* ManageSubscriptionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageSubscriptionsApp.swift; sourceTree = "<group>"; };
 		68D954D02A7221FD0096D15A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,7 +85,9 @@
 		68D9551A2A72417E0096D15A /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		68D9551D2A7246690096D15A /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
 		68D9551F2A724EA50096D15A /* subscription-api.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "subscription-api.json"; sourceTree = "<group>"; };
-		68D955212A72556A0096D15A /* categories copy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "categories copy.json"; sourceTree = "<group>"; };
+		68D955212A72556A0096D15A /* categories copy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "categories copy.json"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		68D955242A72FE960096D15A /* SubscriptionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionItemView.swift; sourceTree = "<group>"; };
+		68D955262A7303220096D15A /* CategoryCoverItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCoverItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +115,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68469A052A731577002116FC /* api */ = {
+			isa = PBXGroup;
+			children = (
+				68469A062A7315C3002116FC /* YTVideosSearch.swift */,
+				68469A082A731612002116FC /* YTSubscriptions.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
 		68D954C22A7221FD0096D15A = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +203,7 @@
 		68D954FA2A7222F30096D15A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				68469A052A731577002116FC /* api */,
 				68D9551A2A72417E0096D15A /* CategoryModel.swift */,
 			);
 			path = Models;
@@ -188,6 +212,7 @@
 		68D954FB2A7222FF0096D15A /* VIews */ = {
 			isa = PBXGroup;
 			children = (
+				68D955232A72FE720096D15A /* Subscription */,
 				68D9551C2A7243D50096D15A /* Category */,
 			);
 			path = VIews;
@@ -207,6 +232,7 @@
 			children = (
 				68D955212A72556A0096D15A /* categories copy.json */,
 				68D9551F2A724EA50096D15A /* subscription-api.json */,
+				68469A032A731544002116FC /* videos-api.json */,
 				68D955152A7240570096D15A /* categories.json */,
 			);
 			path = DummyData;
@@ -232,9 +258,20 @@
 			isa = PBXGroup;
 			children = (
 				68D9550F2A723D180096D15A /* CategoryCoverImageView.swift */,
+				68D955262A7303220096D15A /* CategoryCoverItemView.swift */,
 				68D9551D2A7246690096D15A /* CategoryItemView.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		68D955232A72FE720096D15A /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				68D955242A72FE960096D15A /* SubscriptionItemView.swift */,
+				68469A0B2A731681002116FC /* CatgegorySubscriptionView.swift */,
+				68469A0D2A731704002116FC /* SubscriptionListView.swift */,
+			);
+			path = Subscription;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +378,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68469A042A731544002116FC /* videos-api.json in Resources */,
 				68D955162A7240570096D15A /* categories.json in Resources */,
 				68D955202A724EA50096D15A /* subscription-api.json in Resources */,
 				68D954D72A7221FE0096D15A /* Preview Assets.xcassets in Resources */,
@@ -371,17 +409,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				68D9550B2A722A6D0096D15A /* UserProfileView.swift in Sources */,
+				68469A0E2A731704002116FC /* SubscriptionListView.swift in Sources */,
 				68D9551B2A72417E0096D15A /* CategoryModel.swift in Sources */,
 				68D955182A7241460096D15A /* CodableBundleExtension.swift in Sources */,
+				68469A0C2A731681002116FC /* CatgegorySubscriptionView.swift in Sources */,
 				68D9550D2A722A820096D15A /* MainView.swift in Sources */,
 				68D955052A722A3C0096D15A /* CategoriesView.swift in Sources */,
 				68D955132A723EA30096D15A /* Color.swift in Sources */,
 				68D955072A722A490096D15A /* VideosView.swift in Sources */,
+				68D955272A7303220096D15A /* CategoryCoverItemView.swift in Sources */,
+				68469A092A731612002116FC /* YTSubscriptions.swift in Sources */,
 				68D955102A723D180096D15A /* CategoryCoverImageView.swift in Sources */,
+				68469A072A7315C3002116FC /* YTVideosSearch.swift in Sources */,
 				68D954D12A7221FD0096D15A /* ContentView.swift in Sources */,
 				68D955092A722A620096D15A /* SettingsView.swift in Sources */,
 				68D9551E2A7246690096D15A /* CategoryItemView.swift in Sources */,
 				68D955032A722A1E0096D15A /* SubscriptionsView.swift in Sources */,
+				68D955252A72FE960096D15A /* SubscriptionItemView.swift in Sources */,
 				68D954CF2A7221FD0096D15A /* ManageSubscriptionsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

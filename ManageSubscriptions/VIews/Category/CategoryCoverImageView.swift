@@ -13,24 +13,7 @@ struct CategoryCoverImageView: View {
     var body: some View {
         TabView{
             ForEach(categories) { category in
-                ZStack(alignment: .center) {
-                    Image(category.image)
-                        .resizable()
-                        .scaledToFill()
-                    Text(category.name)
-                        .fontWeight(.black)
-                        .font(.system(size: 52))
-                        .foregroundColor(.accentColor)
-                        .padding(.leading)
-                        .padding(.trailing)
-    //                    .foregroundStyle(
-    //                        LinearGradient(
-    //                            colors: [.customGrayLight,
-    //                                .customGrayMedium],
-    //                            startPoint: .top,
-    //                            endPoint: .bottom)
-    //                    )
-                }//: ZSTACK
+                CategoryCoverItemView(category: category)
             }
         }//: TAB
         .tabViewStyle(PageTabViewStyle())

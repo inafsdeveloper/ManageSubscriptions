@@ -11,14 +11,14 @@ struct CategoryModel: Codable, Identifiable {
     var id: Int
     var name: String
     var image: String
-//    var description: String
-//    var subscriptions: [Subscription]
+    var description: String?
+    var subscriptions: [Subscription]?
 }
 
-//struct Subscription: Codable, Identifiable {
-//    var id: Int
-//    var channelId: String
-//    var title: String
-//    var image: String
-//    var description: String
-//}
+struct Subscription: Codable, Identifiable {
+    var id: Int
+    var channelId: String
+    var title: String
+    var image: String
+    var description: String?
+}
