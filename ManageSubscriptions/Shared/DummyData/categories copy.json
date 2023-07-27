@@ -1,0 +1,103 @@
+[
+  {
+    "id" : 1,
+    "name" : "Science",
+    "image": "Category-Science"
+    "description": "",
+    "subscriptions": [
+        {
+            "id": "UC7_gcs09iThXybpVgjHZ_7g",
+            "title": "PBS Space Time",
+            "image": "PBSSpaceTime",
+            "description": "Space Time explores the outer reaches of space, the craziness of astrophysics, the possibilities of sci-fi, and anything else you can think of beyond Planet Earth with our astrophysicist host: Matthew O’Dowd.\n\nCheck for New Episodes on Wednesday afternoons!\n\nMatt O'Dowd spends his time studying the universe, especially really far-away things like quasars, super-massive black holes, and evolving galaxies. He uses telescopes in space to do it. Matt completed his Ph.D. at NASA's Space Telescope Science Institute, followed by work at the University of Melbourne and Columbia University. He's now a professor at the City University of New York's Lehman College and an Associate at the American Museum of Natural History's Hayden Planetarium.\n\nPrevious host Gabe Perez-Giz is an astrophysicist who studies black hole physics. He received his Ph.D. from Columbia University and also hosted PBS Infinite Series."
+        },
+        {
+            "id": "UCUHW94eEFW7hkUMVaZz4eDg",
+            "title": "Minute Physics",
+            "image": "MinutePhysics",
+            "description": "Simply put: cool physics and other sweet science.\n\n\"If you can't explain it simply, you don't understand it well enough.\"\n~Rutherford via Einstein? (wikiquote)\n\nCreated by Henry Reich"
+        }
+    ]
+  },
+  {
+    "id" : 2,
+    "name" : "Technology",
+    "image": "Category-Technology"
+    "description": "",
+    "subscriptions": [
+        {
+            "id": "UCjtUS7-SZTi6pXjUbzGHQCg",
+            "title": "Undecided with Matt Ferrell",
+            "image": "UMF",
+            "description": "As a UI/UX designer by trade, I explore how sustainable and smart technologies impact our lives. And I try to dive deeper into those topics to provide context.\n\nTopics like electric vehicles, solar panels, and renewable energy that is meant to transition the world off of fossil fuels.  Smart home technology that can make our homes not only more convenient, but safer and more accessible.  Wearable technology that can track our health and save lives.  Or how technology might be invading and breaking down the walls of our privacy.\n\nSo in short...\n\nExploring how technology impacts our lives.\n\nIf you’d like to support the channel, you can do so at https://www.patreon.com/mattferrell.\n\nGet in touch: https://undecidedmf.com/contact-me\n\nSponsorship inquiry form: https://undecidedmf.com/sponsorships\nNon-sponsorship inquiries will not be responded to at this address."
+        },
+        {
+            "id": "UC4QZ_LsYcvcq7qOsOhpAX4A",
+            "title": "ColdFusion",
+            "image": "ColdFusion",
+            "description": "Hi, my name is Dagogo Altraide and I create and narrate all the videos on here.\nThis channel aims to let you experience the cutting edge of the world around us in a relaxed atmosphere.\nLearn the captivating stories about how our world came to be and also learn what's happening in the cutting edge today.\n\n--- New Thinking Book written by Dagogo Altraide ---\nLearn the stories of those who invented the things we use everyday. This book is rated the 9th best technology history book of all time by Book Authority!\nAudio Book: https://goo.gl/p8auh3\nGet the book on Amazon US: http://bit.ly/NewThinkingbook\nAmazon India Link: https://goo.gl/qJCC1T\nAmazon UK link: https://goo.gl/RBxisf\nEbook on Google Play: http://bit.ly/NewThinkingGooglePlay\n\nMERCH:\n\nINTERNATIONAL: https://store.coldfusioncollective.com/\nAUSTRALIA: https://shop.coldfusioncollective.com/\n\nContact | *Business ONLY* dagogo@coldfusioncollective.com\n\nJoin the fun on instagram: \n\n@ColdFusiontv\n\nFacebook | www.facebook.com/coldfusiontv"
+        }
+    ]
+  },
+  {
+    "id" : 3,
+    "name" : "Economics",
+    "image": "Category-Economics"
+    "description": "",
+    "subscriptions": [
+        {
+            "id": "UCZ4AMrDcNrfy3X6nsU8-rPg",
+            "title": "Economics Explained",
+            "image": "EE",
+            "description": "Helping you become more knowledgeable about how the world works, our content covers the biggest topics and headlines through the eyes of economists. The team explores a wide range of subjects improving your ability to understand the world more clearly.\n\nThis is economics, explained.\n\nContact:\nFor business partnerships: partnerships@economicsexplained.com\nFor talent: talent@economicsexplained.com"
+        },
+        {
+            "id": "UCvQECJukTDE2i6aCoMnS-Vg",
+            "title": "Big Think",
+            "image": "BigThink",
+            "description": "Big Think is the leading source of expert-driven, actionable, educational content -- with thousands of videos, featuring experts ranging from Bill Clinton to Bill Nye, we help you get smarter, faster. Get actionable lessons from the world’s greatest thinkers & doers. Our experts are either disrupting or leading their respective fields. We aim to help you explore the big ideas and core skills that define knowledge in the 21st century, so you can apply them to the questions and challenges in your own life. Other Frequent contributors include Michio Kaku & Neil DeGrasse Tyson.\n\nHead to bigthink.com for a multitude of articles just as informative and satisfying as our videos. New articles posted daily on a range of intellectual topics. ​Join Big Think+ to gain access to an immense library of content. It features insight from many of the most celebrated and intelligent individuals in the world today.\n\n   - Subscribe for daily videos.\n   - Business inquiries and fan suggestions welcome."
+        }
+    ]
+  },
+  {
+    "id" : 4,
+    "name" : "Math",
+    "image": "Category-Math"
+    "description": "",
+    "subscriptions": [
+        {
+            "id": "UCYO_jab_esuFRV4b17AJtAw",
+            "title": "3Blue1Brown",
+            "image": "3Blue1Brown",
+            "description": "3Blue1Brown, by Grant Sanderson, is some combination of math and entertainment, depending on your disposition. The goal is for explanations to be driven by animations and for difficult problems to be made simple with changes in perspective.\n\nFor more information, other projects, FAQs, and inquiries see the website: https://www.3blue1brown.com"
+        },
+        {
+            "id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+            "title": "Veritasium",
+            "image": "Ve",
+            "description": "An element of truth - videos about science, education, and anything else I find interesting."
+        }
+    ]
+  },
+  {
+    "id" : 5,
+    "name" : "Entertainment",
+    "image": "Category-Entertainment"
+    "description": "",
+    "subscriptions": []
+  },
+  {
+    "id" : 6,
+    "name" : "News",
+    "image": "Category-News"
+    "description": "",
+    "subscriptions": []
+  },
+  {
+    "id" : 7,
+    "name" : "Politics",
+    "image": "Category-Politics"
+    "description": "",
+    "subscriptions": []
+  }
+]

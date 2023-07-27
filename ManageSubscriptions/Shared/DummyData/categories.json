@@ -1,0 +1,37 @@
+[
+  {
+    "id" : 1,
+    "name" : "Science",
+    "image": "Category-Science"
+  },
+  {
+    "id" : 2,
+    "name" : "Technology",
+    "image": "Category-Technology"
+  },
+  {
+    "id" : 3,
+    "name" : "Economics",
+    "image": "Category-Economics"
+  },
+  {
+    "id" : 4,
+    "name" : "Math",
+    "image": "Category-Math"
+  },
+  {
+    "id" : 5,
+    "name" : "Entertainment",
+    "image": "Category-Entertainment"
+  },
+  {
+    "id" : 6,
+    "name" : "News",
+    "image": "Category-News"
+  },
+  {
+    "id" : 7,
+    "name" : "Politics",
+    "image": "Category-Politics"
+  }
+]
