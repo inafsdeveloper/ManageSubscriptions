@@ -1,2 +1,2 @@
 # ManageSubscription
-Swift App to Manage Subscription (Youtube)
+Swift App to Manage Subscriptions (Youtube)
