@@ -30,7 +30,7 @@ struct SubscriptionItemView: View {
 
 struct SubscriptionItemView_Previews: PreviewProvider {
     static var categories: [CategoryModel] = Bundle.main.decode("categories.json")
-    static var subscription: Subscription = categories[0].subscriptions![0]
+    static var subscription: Subscription = categories[1].subscriptions![0]
     static var previews: some View {
         SubscriptionItemView(subscription: subscription)
     }

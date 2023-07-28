@@ -18,11 +18,11 @@ struct CatgegorySubscriptionView: View {
                 CategoryCoverItemView(category: category)
                     .frame(width: 300, height: 200)
                 
-                ScrollView(.vertical, showsIndicators: true){
+                List {
                     ForEach(category.subscriptions!) {subs in
                         SubscriptionItemView(subscription: subs)
                     }
-                } //: SCROLL
+                } //: LIST
             } //: VSTACK
         }//: NAVIGATION
     }
@@ -31,6 +31,6 @@ struct CatgegorySubscriptionView: View {
 struct CatgegorySubscriptionView_Previews: PreviewProvider {
     static var categories: [CategoryModel] = Bundle.main.decode("categories.json")
     static var previews: some View {
-        CatgegorySubscriptionView(category: categories[0])
+        CatgegorySubscriptionView(category: categories[1])
     }
 }

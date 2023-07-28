@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "Science",
+        "image": "Category-Science",
+        "description": " ",
+        "subscriptions": []
+    },
+    {
+        "id": 2,
+        "name": "Technology",
+        "image": "Category-Technology",
+        "description": " ",
+        "subscriptions": []
+    },
+    {
+        "id": 3,
+        "name": "Economics",
+        "image": "Category-Economics",
+        "description": " ",
+        "subscriptions": []
+    },
+    {
+        "id": 4,
+        "name": "Math",
+        "image": "Category-Math",
+        "description": " ",
+        "subscriptions": []
+    },
+    {
+        "id": 5,
+        "name": "Entertainment",
+        "image": "Category-Entertainment",
+        "description": " ",
+        "subscriptions": []
+    },
+    {
+        "id": 6,
+        "name": "News",
+        "image": "Category-News",
+        "description": " ",
+        "subscriptions": []
+    },
+    {
+        "id": 7,
+        "name": "Politics",
+        "image": "Category-Politics",
+        "description": " ",
+        "subscriptions": []
+    }
+]
