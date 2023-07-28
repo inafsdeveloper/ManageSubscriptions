@@ -29,10 +29,13 @@ struct VideoListItemView: View {
             
             List {
                 ForEach(filteredItems, id:\.self) { item in
-                    VideoItemView(video: item)
-                }
+                    VideoItemView(video: item, image: "3Blue1Brown")
+                } //: LIST
+                .padding(.bottom)
+                .listStyle(PlainListStyle())
+                .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
             }
-        }
+        } //: VSTACK
     }
 }
 
