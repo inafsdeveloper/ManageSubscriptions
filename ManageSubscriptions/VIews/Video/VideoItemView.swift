@@ -12,16 +12,17 @@ import AVKit
 struct VideoItemView: View {
     // MARK: - PROPERTIES
     let video: YTSVidItem
-    
     let image: String
-        
+    
+    
     // MARK: - BODY
     var body: some View {
         let urlString = "https://www.youtube.com/embed/\(String(describing: video.id.videoId))"
         VStack(alignment: .center, spacing: 5) {
-
-            WebView(urlString: urlString)
-                
+            
+            YouTubeView(videoId: video.id.videoId!)
+                .frame(height: 250)
+            
             HStack(alignment: .center, spacing: 16) {
                 Image(image)
                     .resizable()
@@ -29,7 +30,7 @@ struct VideoItemView: View {
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 2))
                     .frame(width: 50, height: 50)
-
+                
                 VStack(alignment: .leading, spacing: 10) {
                     Text(video.snippet.title)
                         .font(.subheadline)
@@ -47,19 +48,15 @@ struct VideoItemView: View {
     }
 }
 
-struct WebView: UIViewRepresentable {
-    let urlString: String
-    
-    func makeUIView(context: Context) -> WKWebView {
-        let webView = WKWebView()
-        return webView
+struct YouTubeView: UIViewRepresentable {
+    let videoId: String
+    func makeUIView(context: Context) ->  WKWebView {
+        return WKWebView()
     }
-    
     func updateUIView(_ uiView: WKWebView, context: Context) {
-        if let url = URL(string: urlString) {
-            let request = URLRequest(url: url)
-            uiView.load(request)
-        }
+        guard let demoURL = URL(string: "https://www.youtube.com/embed/\(videoId)") else { return }
+        uiView.scrollView.isScrollEnabled = false
+        uiView.load(URLRequest(url: demoURL))
     }
 }
 
