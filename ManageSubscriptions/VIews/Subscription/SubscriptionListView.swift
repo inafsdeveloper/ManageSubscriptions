@@ -23,18 +23,43 @@ struct SubscriptionListView: View {
     
     // MARK: - BODY
     var body: some View {
-        VStack {
-            TextField("Search", text: $searchText)
-                .padding()
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+        NavigationView {
+            VStack {
+                TextField("Search", text: $searchText)
+                    .padding()
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
+                List {
+                    ForEach(filteredItems, id:\.self) { item in
+                        
+                        HStack(alignment: .center) {
+                            if let imageURL = item.snippet.thumbnails?.medium?.url
+                            {
+                                AsyncImage(url: URL(string: imageURL)) { image in
+                                    image.resizable()
+                                        .clipShape(Circle())
+                                        .overlay(Circle().stroke(Color.white, lineWidth: 1))
+                                        .frame(width: 40, height: 40)
+                                } placeholder: {
+                                    ProgressView()
+                                }
+                            } else {
+                                Image(systemName: "photo.circle")
+                            }
+                            
+                            Text(item.snippet.title)
+                                .padding(.leading)
+                            
+                            
+                        } //: HSTACK
+                        
+                    }
+                } //: LIST
                 
-            List {
-                ForEach(filteredItems, id:\.self) { item in
-                    Text(item.snippet.title)
-                }
-            } //: LIST
-            
-        } //: VSTACK
+            } //: VSTACK
+            .navigationTitle("Subscriptions")
+        }
+
     }
 }
 

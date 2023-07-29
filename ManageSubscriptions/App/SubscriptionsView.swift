@@ -17,7 +17,6 @@ struct SubscriptionsView: View {
             CatgegorySubscriptionView(category: category!)
         }
         else {
-            // MARK: - need to add logic to handle when no categories are passed
             SubscriptionListView()
         }
     }

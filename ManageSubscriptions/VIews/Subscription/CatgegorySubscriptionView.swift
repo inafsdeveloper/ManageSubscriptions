@@ -20,11 +20,35 @@ struct CatgegorySubscriptionView: View {
                 
                 List {
                     ForEach(category.subscriptions!) {subs in
-                        SubscriptionItemView(subscription: subs)
+                        NavigationLink {
+                            VideoListItemView(channelId: subs.channelId)
+                        } label: {
+                            SubscriptionItemView(subscription: subs)
+                        }
+
                     }
                 } //: LIST
-            } //: VSTACK
+            } //: VSTACK   
         }//: NAVIGATION
+        .toolbar {
+            ToolbarItem (placement: .navigationBarTrailing) {
+                NavigationLink {
+                    let loadedData: YTSubscriptions = Bundle.main.load("subscription-api.json")
+                    let selectedSubs: [SelectedSubs] = loadedData.items.map {item in
+                        return SelectedSubs(subscription: item)
+                    }
+                    AddSubsToCategory(category: category, allSubscription: selectedSubs)
+                } label: {
+                    Text("+")
+                        .foregroundColor(.accentColor)
+                        .font(.title)
+                        .fontWeight(.heavy)
+                }
+
+
+            }
+        }
+
     }
 }
 

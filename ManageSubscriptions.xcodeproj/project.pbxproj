@@ -17,7 +17,8 @@
 		68469A162A734182002116FC /* subscription-api-backup.json in Resources */ = {isa = PBXBuildFile; fileRef = 68469A152A734182002116FC /* subscription-api-backup.json */; };
 		68469A182A735E38002116FC /* user-categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 68469A172A735E38002116FC /* user-categories.json */; };
 		68469A1A2A735F69002116FC /* user-categories-template.json in Resources */ = {isa = PBXBuildFile; fileRef = 68469A192A735F69002116FC /* user-categories-template.json */; };
-		68469A1C2A736055002116FC /* AddSubscriptionToCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68469A1B2A736055002116FC /* AddSubscriptionToCategory.swift */; };
+		68469A232A74622E002116FC /* categories-simple-test-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 68469A222A74622E002116FC /* categories-simple-test-data.json */; };
+		68469A252A74ADE0002116FC /* AddSubsToCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68469A242A74ADE0002116FC /* AddSubsToCategory.swift */; };
 		68D954CF2A7221FD0096D15A /* ManageSubscriptionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D954CE2A7221FD0096D15A /* ManageSubscriptionsApp.swift */; };
 		68D954D12A7221FD0096D15A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D954D02A7221FD0096D15A /* ContentView.swift */; };
 		68D954D32A7221FE0096D15A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D954D22A7221FE0096D15A /* Assets.xcassets */; };
@@ -71,7 +72,8 @@
 		68469A152A734182002116FC /* subscription-api-backup.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "subscription-api-backup.json"; sourceTree = "<group>"; };
 		68469A172A735E38002116FC /* user-categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "user-categories.json"; sourceTree = "<group>"; };
 		68469A192A735F69002116FC /* user-categories-template.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "user-categories-template.json"; sourceTree = "<group>"; };
-		68469A1B2A736055002116FC /* AddSubscriptionToCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionToCategory.swift; sourceTree = "<group>"; };
+		68469A222A74622E002116FC /* categories-simple-test-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "categories-simple-test-data.json"; sourceTree = "<group>"; };
+		68469A242A74ADE0002116FC /* AddSubsToCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubsToCategory.swift; sourceTree = "<group>"; };
 		68D954CB2A7221FD0096D15A /* ManageSubscriptions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManageSubscriptions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D954CE2A7221FD0096D15A /* ManageSubscriptionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageSubscriptionsApp.swift; sourceTree = "<group>"; };
 		68D954D02A7221FD0096D15A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,6 +145,14 @@
 				68469A122A7322D1002116FC /* VideoListItemView.swift */,
 			);
 			path = Video;
+			sourceTree = "<group>";
+		};
+		68469A212A74620D002116FC /* backup */ = {
+			isa = PBXGroup;
+			children = (
+				68469A222A74622E002116FC /* categories-simple-test-data.json */,
+			);
+			path = backup;
 			sourceTree = "<group>";
 		};
 		68D954C22A7221FD0096D15A = {
@@ -252,6 +262,7 @@
 		68D954FD2A72230C0096D15A /* DummyData */ = {
 			isa = PBXGroup;
 			children = (
+				68469A212A74620D002116FC /* backup */,
 				68D955212A72556A0096D15A /* categories copy.json */,
 				68D9551F2A724EA50096D15A /* subscription-api.json */,
 				68469A032A731544002116FC /* videos-api.json */,
@@ -285,6 +296,7 @@
 				68D9550F2A723D180096D15A /* CategoryCoverImageView.swift */,
 				68D955262A7303220096D15A /* CategoryCoverItemView.swift */,
 				68D9551D2A7246690096D15A /* CategoryItemView.swift */,
+				68469A242A74ADE0002116FC /* AddSubsToCategory.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -295,7 +307,6 @@
 				68D955242A72FE960096D15A /* SubscriptionItemView.swift */,
 				68469A0B2A731681002116FC /* CatgegorySubscriptionView.swift */,
 				68469A0D2A731704002116FC /* SubscriptionListView.swift */,
-				68469A1B2A736055002116FC /* AddSubscriptionToCategory.swift */,
 			);
 			path = Subscription;
 			sourceTree = "<group>";
@@ -404,6 +415,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68469A232A74622E002116FC /* categories-simple-test-data.json in Resources */,
 				68469A182A735E38002116FC /* user-categories.json in Resources */,
 				68469A042A731544002116FC /* videos-api.json in Resources */,
 				68D955162A7240570096D15A /* categories.json in Resources */,
@@ -438,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68D9550B2A722A6D0096D15A /* UserProfileView.swift in Sources */,
+				68469A252A74ADE0002116FC /* AddSubsToCategory.swift in Sources */,
 				68469A0E2A731704002116FC /* SubscriptionListView.swift in Sources */,
 				68D9551B2A72417E0096D15A /* CategoryModel.swift in Sources */,
 				68D955182A7241460096D15A /* CodableBundleExtension.swift in Sources */,
@@ -452,7 +465,6 @@
 				68469A092A731612002116FC /* YTSubscriptions.swift in Sources */,
 				68D955102A723D180096D15A /* CategoryCoverImageView.swift in Sources */,
 				68469A072A7315C3002116FC /* YTVideosSearch.swift in Sources */,
-				68469A1C2A736055002116FC /* AddSubscriptionToCategory.swift in Sources */,
 				68D954D12A7221FD0096D15A /* ContentView.swift in Sources */,
 				68D955092A722A620096D15A /* SettingsView.swift in Sources */,
 				68D9551E2A7246690096D15A /* CategoryItemView.swift in Sources */,

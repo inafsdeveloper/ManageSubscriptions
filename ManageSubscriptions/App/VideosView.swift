@@ -9,7 +9,7 @@ import SwiftUI
 
 struct VideosView: View {
     var body: some View {
-        VideoListItemView()
+        VideoListItemView(channelId: nil)
     }
 }
 

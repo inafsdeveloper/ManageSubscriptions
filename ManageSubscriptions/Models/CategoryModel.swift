@@ -8,17 +8,20 @@
 import Foundation
 
 struct CategoryModel: Codable, Identifiable {
-    var id: Int
+    var id: UUID
     var name: String
     var image: String
     var description: String?
     var subscriptions: [Subscription]?
+    
+
 }
 
 struct Subscription: Codable, Identifiable {
-    var id: Int
+    var id: UUID
     var channelId: String
     var title: String
-    var image: String
+    var image: String?
     var description: String?
+        
 }

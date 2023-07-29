@@ -9,9 +9,16 @@ import SwiftUI
 
 struct VideoListItemView: View {
     // MARK: - PROPERTIES
+    let channelId: String?
+    
     @State private var searchText: String = ""
     
-    private var allVideos: YTVideosSearch = Bundle.main.load("videos-api.json")
+    private var allVideos: YTVideosSearch
+    
+    init(channelId: String?) {
+        self.channelId = channelId
+        allVideos = Bundle.main.load("videos-api.json")
+    }
     
     private var filteredItems: [YTSVidItem] {
         if (searchText.isEmpty) {
@@ -41,6 +48,6 @@ struct VideoListItemView: View {
 
 struct VideoListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        VideoListItemView()
+        VideoListItemView(channelId: nil)
     }
 }

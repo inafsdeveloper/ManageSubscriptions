@@ -13,7 +13,7 @@ struct CategoriesView: View {
     // MARK: - BODY
     var body: some View {
         NavigationView {
-            Group {
+            VStack(alignment: .center) {
                 List {
                     CategoryCoverImageView(categories: categories)
                         .frame(height: 300)
@@ -27,9 +27,8 @@ struct CategoriesView: View {
                         }
 
                     }
-
                 } //: LIST
-            } //: GROUP
+            } //: VSTACK
             .navigationBarTitle("Categories", displayMode: .large)
         } //: NAVIGATION
         

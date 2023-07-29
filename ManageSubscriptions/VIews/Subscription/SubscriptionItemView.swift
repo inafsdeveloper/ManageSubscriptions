@@ -11,15 +11,44 @@ struct SubscriptionItemView: View {
     // MARK: - PROPERTIES
     let subscription: Subscription
     
+    // MARK: - FUNCTIONS
+    func checkIfUrl(string: String) -> Bool {
+        return string.contains("http")
+    }
+    
     // MARK: - BODY
     var body: some View {
         HStack(alignment: .center, spacing: 16) {
-            Image(subscription.image)
-                .resizable()
-                .scaledToFit()
-                .clipShape(Circle())
-                .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                .frame(width: 90, height: 90)
+            
+            if let imageURLString = subscription.image {
+                if checkIfUrl(string: imageURLString) {
+                    AsyncImage(url: URL(string: imageURLString)) { image in
+                        image.resizable()
+                            .clipShape(Circle())
+                            .clipShape(Circle())
+                            .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                            .frame(width: 90, height: 90)
+                    } placeholder: {
+                        ProgressView()
+                    }
+                } else {
+                    Image(imageURLString)
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                        .frame(width: 90, height: 90)
+                }
+                
+            } else {
+                Image(systemName: "photo.circle")
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(Circle())
+                    .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                    .frame(width: 90, height: 90)
+            }
+            
             Text(subscription.title)
                 .font(.title2)
                 .fontWeight(.heavy)
