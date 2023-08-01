@@ -31,6 +31,33 @@ struct CategoryContentView: View {
         }
     }
     
+    func addData() {
+        let categoriesJ: [CategoryModel] = Bundle.main.decode("categories.json")
+        for category in categoriesJ {
+            let cat = Category(context: moc)
+            cat.id = UUID()
+            cat.name = category.name
+            cat.image = category.image
+            cat.catDescription = category.description
+            
+            print(cat.name!)
+            
+            for subscription in category.subscriptions! {
+                let sub = Subscription(context: moc)
+                sub.id = UUID()
+                sub.channelId = subscription.channelId
+                sub.title = subscription.title
+                sub.image = subscription.image
+                sub.subDescription = subscription.description
+                sub.origin = cat
+                
+                print(sub.title!)
+            }
+            
+            try? moc.save()
+        }
+    }
+        
     // MARK: - BODY
     var body: some View {
         NavigationView {
@@ -49,7 +76,8 @@ struct CategoryContentView: View {
                 
                 
                 Button("Add") {
-                    
+                    addData()
+                    /*
                     let cat1 = Category(context: moc)
                     cat1.name = "Science"
                     cat1.image = "Category-Science"
@@ -96,6 +124,7 @@ struct CategoryContentView: View {
                     sub4.origin = cat2
                     
                     try? moc.save()
+                    */
                 }
             }
             .navigationTitle("Categories")
@@ -109,7 +138,9 @@ struct CategoryContentView: View {
 }
 
 struct CategoryContentView_Previews: PreviewProvider {
+    
     static var previews: some View {
         CategoryContentView()
+            .environment(\.managedObjectContext, DataController.preview.container.viewContext)
     }
 }
