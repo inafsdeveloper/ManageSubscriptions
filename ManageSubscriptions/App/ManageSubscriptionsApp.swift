@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct ManageSubscriptionsApp: App {
+    @StateObject private var dataController = DataController()
+    
     var body: some Scene {
         WindowGroup {
-            MainView()
+//            MainView()
+            CategoryContentView()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }
