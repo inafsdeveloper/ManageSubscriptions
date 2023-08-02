@@ -40,7 +40,7 @@ struct CategoryContentView: View {
         
         for offset in offsets {
             // find this book in our fetch request
-//            let subscription = subscriptions[offset]
+            //            let subscription = subscriptions[offset]
             print(offset)
             
             let index = category.subscription.firstIndex { sub in
@@ -80,11 +80,31 @@ struct CategoryContentView: View {
             try? moc.save()
         }
     }
-        
+    
+    func clearAll() {
+        for category in categories {
+            do {
+                try moc.delete(category)
+            }catch {
+                let nsError = error as NSError
+                print("Error while deleting all: \(nsError.localizedDescription)")
+            }
+        }
+    }
+    
     // MARK: - BODY
     var body: some View {
         NavigationView {
             VStack {
+                HStack {
+                    Button("Clear") {
+                        clearAll()
+                    }
+                    Spacer()
+                    Button("Add") {
+                        addData()
+                    }
+                }
                 List {
                     ForEach(categories, id:\.self) { category in
                         Section(category.wrappedName) {
@@ -97,60 +117,6 @@ struct CategoryContentView: View {
                         }
                     }
                     .onDelete(perform: deleteCategories)
-                }
-                
-                
-                
-                Button("Add") {
-                    addData()
-                    /*
-                    let cat1 = Category(context: moc)
-                    cat1.name = "Science"
-                    cat1.image = "Category-Science"
-                    cat1.catDescription = "Dummy Description"
-                    
-                    let sub1 = Subscription(context: moc)
-                    sub1.id = UUID()
-                    sub1.channelId = "UC7_gcs09iThXybpVgjHZ_7g"
-                    sub1.title =  "PBS Space Time"
-                    sub1.image = "PBSSpaceTime"
-                    sub1.subDescription =  "Dummy Description for category"
-                    sub1.origin = cat1
-                    
-                    
-                    let sub2 = Subscription(context: moc)
-                    sub2.id = UUID()
-                    sub2.channelId = "UCUHW94eEFW7hkUMVaZz4eDg"
-                    sub2.title =  "Minute Physics"
-                    sub2.image = "MinutePhysics"
-                    sub2.subDescription =  "Dummy Description for category"
-                    sub2.origin = cat1
-                    
-                    
-                    let cat2 = Category(context: moc)
-                    cat2.name = "Technology"
-                    cat2.image = "Category-Technology"
-                    cat2.catDescription = "Dummy Description"
-                    
-                    let sub3 = Subscription(context: moc)
-                    sub3.id = UUID()
-                    sub3.channelId = "UCjtUS7-SZTi6pXjUbzGHQCg"
-                    sub3.title =  "Undecided with Matt Ferrell"
-                    sub3.image = "UMF"
-                    sub3.subDescription =  "Dummy Description for category"
-                    sub3.origin = cat2
-                    
-                    
-                    let sub4 = Subscription(context: moc)
-                    sub4.id = UUID()
-                    sub4.channelId = "UC4QZ_LsYcvcq7qOsOhpAX4A"
-                    sub4.title =  "ColdFusion"
-                    sub4.image = "ColdFusion"
-                    sub4.subDescription =  "Dummy Description for category"
-                    sub4.origin = cat2
-                    
-                    try? moc.save()
-                    */
                 }
             }
             .navigationTitle("Categories")

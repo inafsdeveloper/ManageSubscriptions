@@ -18,7 +18,7 @@ struct AddSubsToCategory: View {
     @Environment(\.presentationMode) var presentationMode
     let haptics = UIImpactFeedbackGenerator(style: .medium)
     
-    var category: Category
+    @ObservedObject var category: Category
     
     @State private var searchText: String = ""
     
@@ -40,6 +40,22 @@ struct AddSubsToCategory: View {
         if let index = allSubscription.firstIndex(where: {$0.id == item.id}) {
             allSubscription[index].isSelected.toggle()
         }
+    }
+    
+    private func addSubsItem() {
+        for selectedSub in allSubscription {
+            if(selectedSub.isSelected) {
+                let sub = Subscription(context: moc)
+                sub.id = UUID()
+                sub.channelId = selectedSub.subscription.snippet.resourceId.channelId
+                sub.title = selectedSub.subscription.snippet.title
+                sub.image = selectedSub.subscription.snippet.thumbnails?.medium?.url
+                sub.subDescription = selectedSub.subscription.snippet.description
+                sub.origin = category
+            }
+        }
+        
+        try? moc.save()
     }
     
     // MARK: - BODY
@@ -89,6 +105,7 @@ struct AddSubsToCategory: View {
             ToolbarItem (placement: .navigationBarTrailing) {
                 Button {
                     print("Done")
+                    addSubsItem()
                     presentationMode.wrappedValue.dismiss()
                 } label: {
                     Text("Done")

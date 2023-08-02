@@ -25,7 +25,6 @@ struct CategoriesView: View {
                         } label: {
                             CategoryItemView(category: category)
                         }
-
                     }
                 } //: LIST
             } //: VSTACK

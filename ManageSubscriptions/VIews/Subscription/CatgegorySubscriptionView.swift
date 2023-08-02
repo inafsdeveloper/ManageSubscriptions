@@ -9,7 +9,21 @@ import SwiftUI
 
 struct CatgegorySubscriptionView: View {
     // MARK: - PROPERTIES
+    @Environment(\.managedObjectContext) var moc
     let category: Category
+    
+    // MARK: - FUNCTIONS
+    func deleteSubscriptionsFromCategory(at offsets: IndexSet) {
+        for offset in offsets {
+            let index = category.subscription.firstIndex { sub in
+                sub.id == category.subscriptionArray[offset].id
+            }
+            
+            category.subscription.remove(at: index!)
+            
+            try? moc.save()
+        }
+    }
     
     // MARK: - BODY
     var body: some View {
@@ -27,6 +41,7 @@ struct CatgegorySubscriptionView: View {
                         }
 
                     }
+                    .onDelete(perform: deleteSubscriptionsFromCategory)
                 } //: LIST
             } //: VSTACK   
         }//: NAVIGATION
@@ -34,7 +49,9 @@ struct CatgegorySubscriptionView: View {
             ToolbarItem (placement: .navigationBarTrailing) {
                 NavigationLink {
                     let loadedData: YTSubscriptions = Bundle.main.load("subscription-api.json")
-                    let selectedSubs: [SelectedSubs] = loadedData.items.map {item in
+                    let subsToBeFiltered = Set(category.subscriptionArray.map {$0.wrappedChannelId})
+                    let filterSubs: [SubsItem] = loadedData.items.filter { !subsToBeFiltered.contains($0.snippet.resourceId.channelId)}
+                    let selectedSubs: [SelectedSubs] = filterSubs.map {item in
                         return SelectedSubs(subscription: item)
                     }
                     AddSubsToCategory(category: category, allSubscription: selectedSubs)
