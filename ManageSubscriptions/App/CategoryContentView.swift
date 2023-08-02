@@ -11,6 +11,7 @@ struct CategoryContentView: View {
     // MARK: - PROPERTIES
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: []) var categories: FetchedResults<Category>
+    @FetchRequest(sortDescriptors: []) var subscriptions: FetchedResults<Subscription>
     let categoriesData: [CategoryModel] = Bundle.main.decode("categories.json")
     
     // MARK: - FUNCTIONS
@@ -28,6 +29,28 @@ struct CategoryContentView: View {
         } catch {
             let nsError = error as NSError
             print("Unresolved error while saving: \(nsError.localizedDescription)")
+        }
+    }
+    
+    
+    func deleteSubscription(at offsets: IndexSet , from category: Category) {
+        print("Delete Subscription...")
+        
+        print(offsets)
+        
+        for offset in offsets {
+            // find this book in our fetch request
+//            let subscription = subscriptions[offset]
+            print(offset)
+            
+            let index = category.subscription.firstIndex { sub in
+                sub.id == category.subscriptionArray[offset].id
+            }
+            categories.first { cat in
+                cat.id == category.id
+            }?.subscription.remove(at: index!)
+            
+            try? moc.save()
         }
     }
     
@@ -67,6 +90,9 @@ struct CategoryContentView: View {
                         Section(category.wrappedName) {
                             ForEach(category.subscriptionArray, id:\.self) { subscription in
                                 Text(subscription.wrappedTitle)
+                            }
+                            .onDelete { indices in
+                                self.deleteSubscription(at: indices, from: category)
                             }
                         }
                     }

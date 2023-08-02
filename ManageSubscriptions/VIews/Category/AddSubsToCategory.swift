@@ -14,10 +14,11 @@ struct SelectedSubs: Identifiable {
 }
 struct AddSubsToCategory: View {
     // MARK: - PROPERTIES
+    @Environment(\.managedObjectContext) var moc
     @Environment(\.presentationMode) var presentationMode
     let haptics = UIImpactFeedbackGenerator(style: .medium)
     
-    var category: CategoryModel
+    var category: Category
     
     @State private var searchText: String = ""
     
@@ -99,13 +100,13 @@ struct AddSubsToCategory: View {
     } //: BODY
 }
 
-struct AddSubsToCategory_Previews: PreviewProvider {
-    static var categories: [CategoryModel] = Bundle.main.load("categories.json")
-    static var loadedData: YTSubscriptions = Bundle.main.load("subscription-api.json")
-    static var selectedSubs: [SelectedSubs] = loadedData.items.map {item in
-        return SelectedSubs(subscription: item)
-    }
-    static var previews: some View {
-        AddSubsToCategory(category: categories[0], allSubscription: selectedSubs)
-    }
-}
+//struct AddSubsToCategory_Previews: PreviewProvider {
+//    static var categories: [CategoryModel] = Bundle.main.load("categories.json")
+//    static var loadedData: YTSubscriptions = Bundle.main.load("subscription-api.json")
+//    static var selectedSubs: [SelectedSubs] = loadedData.items.map {item in
+//        return SelectedSubs(subscription: item)
+//    }
+//    static var previews: some View {
+//        AddSubsToCategory(category: categories[0], allSubscription: selectedSubs)
+//    }
+//}

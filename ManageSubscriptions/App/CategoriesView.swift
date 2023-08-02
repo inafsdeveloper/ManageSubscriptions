@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CategoriesView: View {
     // MARK: - PROPERTIES
-    let categories: [CategoryModel] = Bundle.main.decode("categories.json")
+    @FetchRequest(sortDescriptors: []) var categories: FetchedResults<Category>
     // MARK: - BODY
     var body: some View {
         NavigationView {

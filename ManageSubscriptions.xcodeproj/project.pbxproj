@@ -49,6 +49,7 @@
 		68D955222A72556A0096D15A /* categories copy.json in Resources */ = {isa = PBXBuildFile; fileRef = 68D955212A72556A0096D15A /* categories copy.json */; };
 		68D955252A72FE960096D15A /* SubscriptionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D955242A72FE960096D15A /* SubscriptionItemView.swift */; };
 		68D955272A7303220096D15A /* CategoryCoverItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D955262A7303220096D15A /* CategoryCoverItemView.swift */; };
+		68DB12C52A79C4F500A11F76 /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB12C42A79C4F500A11F76 /* CommonFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		68D955212A72556A0096D15A /* categories copy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "categories copy.json"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		68D955242A72FE960096D15A /* SubscriptionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionItemView.swift; sourceTree = "<group>"; };
 		68D955262A7303220096D15A /* CategoryCoverItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCoverItemView.swift; sourceTree = "<group>"; };
+		68DB12C42A79C4F500A11F76 /* CommonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +316,7 @@
 			children = (
 				68D955122A723EA30096D15A /* Color.swift */,
 				68D955172A7241460096D15A /* CodableBundleExtension.swift */,
+				68DB12C42A79C4F500A11F76 /* CommonFunctions.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				68469A132A7322D1002116FC /* VideoListItemView.swift in Sources */,
 				68D9550D2A722A820096D15A /* MainView.swift in Sources */,
 				68D955052A722A3C0096D15A /* CategoriesView.swift in Sources */,
+				68DB12C52A79C4F500A11F76 /* CommonFunctions.swift in Sources */,
 				68469A112A732022002116FC /* VideoItemView.swift in Sources */,
 				68D955132A723EA30096D15A /* Color.swift in Sources */,
 				68D955072A722A490096D15A /* VideosView.swift in Sources */,

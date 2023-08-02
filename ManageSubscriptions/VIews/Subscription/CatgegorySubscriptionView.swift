@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CatgegorySubscriptionView: View {
     // MARK: - PROPERTIES
-    let category: CategoryModel
+    let category: Category
     
     // MARK: - BODY
     var body: some View {
@@ -19,7 +19,7 @@ struct CatgegorySubscriptionView: View {
                     .frame(width: 300, height: 200)
                 
                 List {
-                    ForEach(category.subscriptions!) {subs in
+                    ForEach(category.subscriptionArray) {subs in
                         NavigationLink {
                             VideoListItemView(channelId: subs.channelId)
                         } label: {
@@ -52,9 +52,9 @@ struct CatgegorySubscriptionView: View {
     }
 }
 
-struct CatgegorySubscriptionView_Previews: PreviewProvider {
-    static var categories: [CategoryModel] = Bundle.main.decode("categories.json")
-    static var previews: some View {
-        CatgegorySubscriptionView(category: categories[1])
-    }
-}
+//struct CatgegorySubscriptionView_Previews: PreviewProvider {
+//    static var categories: [CategoryModel] = Bundle.main.decode("categories.json")
+//    static var previews: some View {
+//        CatgegorySubscriptionView(category: categories[1])
+//    }
+//}
