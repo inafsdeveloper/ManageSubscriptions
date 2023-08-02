@@ -27,24 +27,21 @@ struct CatgegorySubscriptionView: View {
     
     // MARK: - BODY
     var body: some View {
-        NavigationView {
-            VStack(alignment: .center) {
-                CategoryCoverItemView(category: category)
-                    .frame(width: 300, height: 200)
-                
-                List {
-                    ForEach(category.subscriptionArray) {subs in
-                        NavigationLink {
-                            VideoListItemView(channelId: subs.channelId)
-                        } label: {
-                            SubscriptionItemView(subscription: subs)
-                        }
-
+        VStack(alignment: .center) {
+            CategoryCoverItemView(category: category)
+                .frame(width: 300, height: 200)
+            
+            List {
+                ForEach(category.subscriptionArray) {subs in
+                    NavigationLink {
+                        VideoListItemView(channelId: subs.channelId)
+                    } label: {
+                        SubscriptionItemView(subscription: subs)
                     }
-                    .onDelete(perform: deleteSubscriptionsFromCategory)
-                } //: LIST
-            } //: VSTACK   
-        }//: NAVIGATION
+                }
+                .onDelete(perform: deleteSubscriptionsFromCategory)
+            } //: LIST
+        } //: VSTACK
         .toolbar {
             ToolbarItem (placement: .navigationBarTrailing) {
                 NavigationLink {
@@ -61,11 +58,11 @@ struct CatgegorySubscriptionView: View {
                         .font(.title)
                         .fontWeight(.heavy)
                 }
-
-
+                
+                
             }
         }
-
+        
     }
 }
 

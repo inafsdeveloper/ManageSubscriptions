@@ -65,7 +65,7 @@ struct AddSubsToCategory: View {
                 TextField("Search", text: $searchText)
                     .padding()
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                
+                Divider()
                 List {
                     ForEach(filteredItems) { item in
                         HStack(alignment: .center){
@@ -99,8 +99,8 @@ struct AddSubsToCategory: View {
                     }
                 } //: LIST
             } //: VSTACK
-            .navigationBarTitle("Add/Delete Subs")
         } //: NAVIGATION
+        .navigationBarTitle("Add/Delete Subs")
         .toolbar {
             ToolbarItem (placement: .navigationBarTrailing) {
                 Button {
