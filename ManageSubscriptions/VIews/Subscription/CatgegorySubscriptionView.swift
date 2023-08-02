@@ -10,7 +10,7 @@ import SwiftUI
 struct CatgegorySubscriptionView: View {
     // MARK: - PROPERTIES
     @Environment(\.managedObjectContext) var moc
-    let category: Category
+    @StateObject var category: Category
     
     @State private var showAddSubsScreen = false
     

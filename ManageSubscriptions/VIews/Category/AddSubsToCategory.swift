@@ -52,6 +52,8 @@ struct AddSubsToCategory: View {
                 sub.image = selectedSub.subscription.snippet.thumbnails?.medium?.url
                 sub.subDescription = selectedSub.subscription.snippet.description
                 sub.origin = category
+                
+                
             }
         }
         
