@@ -15,7 +15,7 @@ struct SelectedSubs: Identifiable {
 struct AddSubsToCategory: View {
     // MARK: - PROPERTIES
     @Environment(\.managedObjectContext) var moc
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) var dismiss
     let haptics = UIImpactFeedbackGenerator(style: .medium)
     
     @ObservedObject var category: Category
@@ -99,20 +99,30 @@ struct AddSubsToCategory: View {
                     }
                 } //: LIST
             } //: VSTACK
-        } //: NAVIGATION
-        .navigationBarTitle("Add/Delete Subs")
-        .toolbar {
-            ToolbarItem (placement: .navigationBarTrailing) {
-                Button {
-                    print("Done")
-                    addSubsItem()
-                    presentationMode.wrappedValue.dismiss()
-                } label: {
-                    Text("Done")
+            .navigationBarTitle("Add/Delete Subs")
+            .toolbar {
+                ToolbarItem (placement: .navigationBarTrailing) {
+                    Button {
+                        print("Done")
+                        addSubsItem()
+                        dismiss()
+                    } label: {
+                        Text("Done")
+                    }
+                    
                 }
                 
+                ToolbarItem (placement: .navigationBarLeading) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Text("Cancel")
+                    }
+                    
+                }
             }
-        }
+        } //: NAVIGATION
+       
         
     } //: BODY
 }

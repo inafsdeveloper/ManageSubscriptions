@@ -12,6 +12,8 @@ struct CatgegorySubscriptionView: View {
     @Environment(\.managedObjectContext) var moc
     let category: Category
     
+    @State private var showAddSubsScreen = false
+    
     // MARK: - FUNCTIONS
     func deleteSubscriptionsFromCategory(at offsets: IndexSet) {
         for offset in offsets {
@@ -44,23 +46,21 @@ struct CatgegorySubscriptionView: View {
         } //: VSTACK
         .toolbar {
             ToolbarItem (placement: .navigationBarTrailing) {
-                NavigationLink {
-                    let loadedData: YTSubscriptions = Bundle.main.load("subscription-api.json")
-                    let subsToBeFiltered = Set(category.subscriptionArray.map {$0.wrappedChannelId})
-                    let filterSubs: [SubsItem] = loadedData.items.filter { !subsToBeFiltered.contains($0.snippet.resourceId.channelId)}
-                    let selectedSubs: [SelectedSubs] = filterSubs.map {item in
-                        return SelectedSubs(subscription: item)
-                    }
-                    AddSubsToCategory(category: category, allSubscription: selectedSubs)
+                Button {
+                    showAddSubsScreen = true
                 } label: {
-                    Text("+")
-                        .foregroundColor(.accentColor)
-                        .font(.title)
-                        .fontWeight(.heavy)
+                    Label("Add Subs", systemImage: "plus")
                 }
-                
-                
             }
+        }
+        .sheet(isPresented: $showAddSubsScreen) {
+            let loadedData: YTSubscriptions = Bundle.main.load("subscription-api.json")
+            let subsToBeFiltered = Set(category.subscriptionArray.map {$0.wrappedChannelId})
+            let filterSubs: [SubsItem] = loadedData.items.filter { !subsToBeFiltered.contains($0.snippet.resourceId.channelId)}
+            let selectedSubs: [SelectedSubs] = filterSubs.map {item in
+                return SelectedSubs(subscription: item)
+            }
+            AddSubsToCategory(category: category, allSubscription: selectedSubs)
         }
         
     }
