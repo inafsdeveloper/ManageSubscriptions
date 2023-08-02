@@ -12,12 +12,12 @@ struct CategoryModel: Codable, Identifiable {
     var name: String
     var image: String
     var description: String?
-    var subscriptions: [Subscription]?
+    var subscriptions: [CatSubscription]?
     
 
 }
 
-struct Subscription: Codable, Identifiable {
+struct CatSubscription: Codable, Identifiable {
     var id: UUID
     var channelId: String
     var title: String

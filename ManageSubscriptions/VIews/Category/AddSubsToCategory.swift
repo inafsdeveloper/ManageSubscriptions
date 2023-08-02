@@ -14,10 +14,11 @@ struct SelectedSubs: Identifiable {
 }
 struct AddSubsToCategory: View {
     // MARK: - PROPERTIES
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.managedObjectContext) var moc
+    @Environment(\.dismiss) var dismiss
     let haptics = UIImpactFeedbackGenerator(style: .medium)
     
-    var category: CategoryModel
+    @ObservedObject var category: Category
     
     @State private var searchText: String = ""
     
@@ -41,6 +42,24 @@ struct AddSubsToCategory: View {
         }
     }
     
+    private func addSubsItem() {
+        for selectedSub in allSubscription {
+            if(selectedSub.isSelected) {
+                let sub = Subscription(context: moc)
+                sub.id = UUID()
+                sub.channelId = selectedSub.subscription.snippet.resourceId.channelId
+                sub.title = selectedSub.subscription.snippet.title
+                sub.image = selectedSub.subscription.snippet.thumbnails?.medium?.url
+                sub.subDescription = selectedSub.subscription.snippet.description
+                sub.origin = category
+                
+                
+            }
+        }
+        
+        try? moc.save()
+    }
+    
     // MARK: - BODY
     var body: some View {
         NavigationView {
@@ -48,7 +67,7 @@ struct AddSubsToCategory: View {
                 TextField("Search", text: $searchText)
                     .padding()
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                
+                Divider()
                 List {
                     ForEach(filteredItems) { item in
                         HStack(alignment: .center){
@@ -83,29 +102,40 @@ struct AddSubsToCategory: View {
                 } //: LIST
             } //: VSTACK
             .navigationBarTitle("Add/Delete Subs")
-        } //: NAVIGATION
-        .toolbar {
-            ToolbarItem (placement: .navigationBarTrailing) {
-                Button {
-                    print("Done")
-                    presentationMode.wrappedValue.dismiss()
-                } label: {
-                    Text("Done")
+            .toolbar {
+                ToolbarItem (placement: .navigationBarTrailing) {
+                    Button {
+                        print("Done")
+                        addSubsItem()
+                        dismiss()
+                    } label: {
+                        Text("Done")
+                    }
+                    
                 }
                 
+                ToolbarItem (placement: .navigationBarLeading) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Text("Cancel")
+                    }
+                    
+                }
             }
-        }
+        } //: NAVIGATION
+       
         
     } //: BODY
 }
 
-struct AddSubsToCategory_Previews: PreviewProvider {
-    static var categories: [CategoryModel] = Bundle.main.load("categories.json")
-    static var loadedData: YTSubscriptions = Bundle.main.load("subscription-api.json")
-    static var selectedSubs: [SelectedSubs] = loadedData.items.map {item in
-        return SelectedSubs(subscription: item)
-    }
-    static var previews: some View {
-        AddSubsToCategory(category: categories[0], allSubscription: selectedSubs)
-    }
-}
+//struct AddSubsToCategory_Previews: PreviewProvider {
+//    static var categories: [CategoryModel] = Bundle.main.load("categories.json")
+//    static var loadedData: YTSubscriptions = Bundle.main.load("subscription-api.json")
+//    static var selectedSubs: [SelectedSubs] = loadedData.items.map {item in
+//        return SelectedSubs(subscription: item)
+//    }
+//    static var previews: some View {
+//        AddSubsToCategory(category: categories[0], allSubscription: selectedSubs)
+//    }
+//}

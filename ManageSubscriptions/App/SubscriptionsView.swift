@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SubscriptionsView: View {
     // MARK: - PROPERTIES
-    let category: CategoryModel?
+    let category: Category?
     
     // MARK: - BODY
     var body: some View {
@@ -22,10 +22,10 @@ struct SubscriptionsView: View {
     }
 }
 
-struct SubscriptionsView_Previews: PreviewProvider {
-    static var categories: [CategoryModel] = Bundle.main.decode("categories.json")
-    static var previews: some View {
-        
-        SubscriptionsView(category: categories[1])
-    }
-}
+//struct SubscriptionsView_Previews: PreviewProvider {
+//    static var categories: [CategoryModel] = Bundle.main.decode("categories.json")
+//    static var previews: some View {
+//        
+//        SubscriptionsView(category: categories[1])
+//    }
+//}

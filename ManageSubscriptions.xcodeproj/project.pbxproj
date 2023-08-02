@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680373882A78E17200AB108E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680373872A78E17200AB108E /* DataController.swift */; };
+		6803738E2A78E31400AB108E /* MetaData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6803738C2A78E31400AB108E /* MetaData.xcdatamodeld */; };
+		6803739C2A78E43400AB108E /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680373982A78E43400AB108E /* Category+CoreDataClass.swift */; };
+		6803739D2A78E43400AB108E /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680373992A78E43400AB108E /* Category+CoreDataProperties.swift */; };
+		6803739E2A78E43400AB108E /* Subscription+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6803739A2A78E43400AB108E /* Subscription+CoreDataClass.swift */; };
+		6803739F2A78E43400AB108E /* Subscription+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6803739B2A78E43400AB108E /* Subscription+CoreDataProperties.swift */; };
+		680373A12A78E6CB00AB108E /* CategoryContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680373A02A78E6CB00AB108E /* CategoryContentView.swift */; };
 		68469A042A731544002116FC /* videos-api.json in Resources */ = {isa = PBXBuildFile; fileRef = 68469A032A731544002116FC /* videos-api.json */; };
 		68469A072A7315C3002116FC /* YTVideosSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68469A062A7315C3002116FC /* YTVideosSearch.swift */; };
 		68469A092A731612002116FC /* YTSubscriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68469A082A731612002116FC /* YTSubscriptions.swift */; };
@@ -42,6 +49,7 @@
 		68D955222A72556A0096D15A /* categories copy.json in Resources */ = {isa = PBXBuildFile; fileRef = 68D955212A72556A0096D15A /* categories copy.json */; };
 		68D955252A72FE960096D15A /* SubscriptionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D955242A72FE960096D15A /* SubscriptionItemView.swift */; };
 		68D955272A7303220096D15A /* CategoryCoverItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D955262A7303220096D15A /* CategoryCoverItemView.swift */; };
+		68DB12C52A79C4F500A11F76 /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB12C42A79C4F500A11F76 /* CommonFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +70,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		680373872A78E17200AB108E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		6803738D2A78E31400AB108E /* MetaData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MetaData.xcdatamodel; sourceTree = "<group>"; };
+		680373982A78E43400AB108E /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Category+CoreDataClass.swift"; path = "ManageSubscriptions/DataModel/Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		680373992A78E43400AB108E /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Category+CoreDataProperties.swift"; path = "ManageSubscriptions/DataModel/Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6803739A2A78E43400AB108E /* Subscription+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Subscription+CoreDataClass.swift"; path = "ManageSubscriptions/DataModel/Subscription+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6803739B2A78E43400AB108E /* Subscription+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Subscription+CoreDataProperties.swift"; path = "ManageSubscriptions/DataModel/Subscription+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		680373A02A78E6CB00AB108E /* CategoryContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryContentView.swift; sourceTree = "<group>"; };
 		68469A032A731544002116FC /* videos-api.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "videos-api.json"; sourceTree = "<group>"; };
 		68469A062A7315C3002116FC /* YTVideosSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTVideosSearch.swift; sourceTree = "<group>"; };
 		68469A082A731612002116FC /* YTSubscriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTSubscriptions.swift; sourceTree = "<group>"; };
@@ -102,6 +117,7 @@
 		68D955212A72556A0096D15A /* categories copy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "categories copy.json"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		68D955242A72FE960096D15A /* SubscriptionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionItemView.swift; sourceTree = "<group>"; };
 		68D955262A7303220096D15A /* CategoryCoverItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCoverItemView.swift; sourceTree = "<group>"; };
+		68DB12C42A79C4F500A11F76 /* CommonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +145,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		680373862A78E14D00AB108E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				680373872A78E17200AB108E /* DataController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6803738F2A78E3E200AB108E /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		68469A052A731577002116FC /* api */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +189,10 @@
 		68D954C22A7221FD0096D15A = {
 			isa = PBXGroup;
 			children = (
+				680373982A78E43400AB108E /* Category+CoreDataClass.swift */,
+				680373992A78E43400AB108E /* Category+CoreDataProperties.swift */,
+				6803739A2A78E43400AB108E /* Subscription+CoreDataClass.swift */,
+				6803739B2A78E43400AB108E /* Subscription+CoreDataProperties.swift */,
 				68D954CD2A7221FD0096D15A /* ManageSubscriptions */,
 				68D954DF2A7221FE0096D15A /* ManageSubscriptionsTests */,
 				68D954E92A7221FE0096D15A /* ManageSubscriptionsUITests */,
@@ -178,6 +213,8 @@
 		68D954CD2A7221FD0096D15A /* ManageSubscriptions */ = {
 			isa = PBXGroup;
 			children = (
+				6803738F2A78E3E200AB108E /* DataModel */,
+				680373862A78E14D00AB108E /* Controller */,
 				68D955112A723E940096D15A /* Utility */,
 				68D9550E2A7237BE0096D15A /* Info.plist */,
 				68D954FC2A7223060096D15A /* Shared */,
@@ -187,6 +224,7 @@
 				68D954D22A7221FE0096D15A /* Assets.xcassets */,
 				68D954D42A7221FE0096D15A /* ManageSubscriptions.entitlements */,
 				68D954D52A7221FE0096D15A /* Preview Content */,
+				6803738C2A78E31400AB108E /* MetaData.xcdatamodeld */,
 			);
 			path = ManageSubscriptions;
 			sourceTree = "<group>";
@@ -227,6 +265,7 @@
 				68D955082A722A620096D15A /* SettingsView.swift */,
 				68D9550A2A722A6D0096D15A /* UserProfileView.swift */,
 				68D9550C2A722A820096D15A /* MainView.swift */,
+				680373A02A78E6CB00AB108E /* CategoryContentView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -277,6 +316,7 @@
 			children = (
 				68D955122A723EA30096D15A /* Color.swift */,
 				68D955172A7241460096D15A /* CodableBundleExtension.swift */,
+				68DB12C42A79C4F500A11F76 /* CommonFunctions.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -449,7 +489,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6803739E2A78E43400AB108E /* Subscription+CoreDataClass.swift in Sources */,
+				680373A12A78E6CB00AB108E /* CategoryContentView.swift in Sources */,
 				68D9550B2A722A6D0096D15A /* UserProfileView.swift in Sources */,
+				6803739D2A78E43400AB108E /* Category+CoreDataProperties.swift in Sources */,
 				68469A252A74ADE0002116FC /* AddSubsToCategory.swift in Sources */,
 				68469A0E2A731704002116FC /* SubscriptionListView.swift in Sources */,
 				68D9551B2A72417E0096D15A /* CategoryModel.swift in Sources */,
@@ -458,18 +501,23 @@
 				68469A132A7322D1002116FC /* VideoListItemView.swift in Sources */,
 				68D9550D2A722A820096D15A /* MainView.swift in Sources */,
 				68D955052A722A3C0096D15A /* CategoriesView.swift in Sources */,
+				68DB12C52A79C4F500A11F76 /* CommonFunctions.swift in Sources */,
 				68469A112A732022002116FC /* VideoItemView.swift in Sources */,
 				68D955132A723EA30096D15A /* Color.swift in Sources */,
 				68D955072A722A490096D15A /* VideosView.swift in Sources */,
+				680373882A78E17200AB108E /* DataController.swift in Sources */,
 				68D955272A7303220096D15A /* CategoryCoverItemView.swift in Sources */,
 				68469A092A731612002116FC /* YTSubscriptions.swift in Sources */,
 				68D955102A723D180096D15A /* CategoryCoverImageView.swift in Sources */,
 				68469A072A7315C3002116FC /* YTVideosSearch.swift in Sources */,
 				68D954D12A7221FD0096D15A /* ContentView.swift in Sources */,
+				6803739F2A78E43400AB108E /* Subscription+CoreDataProperties.swift in Sources */,
 				68D955092A722A620096D15A /* SettingsView.swift in Sources */,
 				68D9551E2A7246690096D15A /* CategoryItemView.swift in Sources */,
 				68D955032A722A1E0096D15A /* SubscriptionsView.swift in Sources */,
 				68D955252A72FE960096D15A /* SubscriptionItemView.swift in Sources */,
+				6803738E2A78E31400AB108E /* MetaData.xcdatamodeld in Sources */,
+				6803739C2A78E43400AB108E /* Category+CoreDataClass.swift in Sources */,
 				68D954CF2A7221FD0096D15A /* ManageSubscriptionsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -826,6 +874,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6803738C2A78E31400AB108E /* MetaData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6803738D2A78E31400AB108E /* MetaData.xcdatamodel */,
+			);
+			currentVersion = 6803738D2A78E31400AB108E /* MetaData.xcdatamodel */;
+			path = MetaData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 68D954C32A7221FD0096D15A /* Project object */;
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CategoryCoverImageView: View {
     // MARK: - PROPERTIES
-    let categories: [CategoryModel]
+    let categories: FetchedResults<Category>
     var body: some View {
         TabView{
             ForEach(categories) { category in
@@ -20,8 +20,8 @@ struct CategoryCoverImageView: View {
     }
 }
 
-struct CoverImageView_Previews: PreviewProvider {
-    static var previews: some View {
-        CategoryCoverImageView(categories: Bundle.main.decode("categories.json"))
-    }
-}
+//struct CoverImageView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CategoryCoverImageView(categories: DataController.preview.categoryDummyData)
+//    }
+//}

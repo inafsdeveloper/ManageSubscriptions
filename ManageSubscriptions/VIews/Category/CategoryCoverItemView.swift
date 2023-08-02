@@ -9,14 +9,31 @@ import SwiftUI
 
 struct CategoryCoverItemView: View {
     // MARK: - PROPERTIEES
-    let category: CategoryModel
+    let category: Category
     // MARK: - BODY
     var body: some View {
         ZStack(alignment: .center) {
-            Image(category.image)
-                .resizable()
-                .scaledToFill()
-            Text(category.name)
+            if let imageURLString = category.image {
+                if checkIfUrl(string: imageURLString) {
+                    AsyncImage(url: URL(string: imageURLString)) { image in
+                        image
+                            .resizable()
+                            .scaledToFill()
+                    } placeholder: {
+                        ProgressView()
+                    }
+                } else {
+                    Image(imageURLString)
+                        .resizable()
+                        .scaledToFill()
+                }
+            } else {
+                Image(systemName: "photo.circle")
+                    .resizable()
+                    .scaledToFill()
+            }
+
+            Text(category.wrappedName)
                 .fontWeight(.black)
                 .font(.system(size: 52))
                 .foregroundColor(.accentColor)
@@ -34,8 +51,8 @@ struct CategoryCoverItemView: View {
 }
 
 struct CategoryCoverItemView_Previews: PreviewProvider {
-    static var categories: [CategoryModel] = Bundle.main.decode("categories.json")
+    
     static var previews: some View {
-        CategoryCoverItemView(category: categories[0])
+        CategoryCoverItemView(category: DataController.preview.categoryDummyData[0])
     }
 }

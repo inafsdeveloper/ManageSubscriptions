@@ -11,11 +11,6 @@ struct SubscriptionItemView: View {
     // MARK: - PROPERTIES
     let subscription: Subscription
     
-    // MARK: - FUNCTIONS
-    func checkIfUrl(string: String) -> Bool {
-        return string.contains("http")
-    }
-    
     // MARK: - BODY
     var body: some View {
         HStack(alignment: .center, spacing: 16) {
@@ -49,7 +44,7 @@ struct SubscriptionItemView: View {
                     .frame(width: 90, height: 90)
             }
             
-            Text(subscription.title)
+            Text(subscription.wrappedTitle)
                 .font(.title2)
                 .fontWeight(.heavy)
                 .foregroundColor(.accentColor)
@@ -57,10 +52,10 @@ struct SubscriptionItemView: View {
     }
 }
 
-struct SubscriptionItemView_Previews: PreviewProvider {
-    static var categories: [CategoryModel] = Bundle.main.decode("categories.json")
-    static var subscription: Subscription = categories[1].subscriptions![0]
-    static var previews: some View {
-        SubscriptionItemView(subscription: subscription)
-    }
-}
+//struct SubscriptionItemView_Previews: PreviewProvider {
+//    static var categories: [CategoryModel] = Bundle.main.decode("categories.json")
+//    static var subscription: CatSubscription = categories[1].subscriptions![0]
+//    static var previews: some View {
+//        SubscriptionItemView(subscription: subscription)
+//    }
+//}
